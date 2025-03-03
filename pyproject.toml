@@ -1,0 +1,81 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ml-expert"
+version = "0.1.0"
+description = "ML Expert tooling for paper collection and analysis"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  # Original ML-expert dependencies
+  "arxiv>=1.4.0",
+  "beautifulsoup4>=4.12.0",
+  "datasets>=2.12.0",
+  "numpy>=1.24.0",
+  "pandas>=1.5.0",
+  "peft>=0.4.0",
+  "requests>=2.31.0",
+  "tensorboard>=2.13.0",
+  "tqdm>=4.65.0",
+
+  # Essential olmocr dependencies
+  "torch>=2.5.1",
+  "transformers>=4.46.2",
+  "Pillow",
+  "pypdf>=5.2.0",
+  "pypdfium2",
+  "lingua-language-detector",
+  "ftfy",
+  "bleach",
+  "markdown2",
+  "filelock",
+  "orjson",
+  "zstandard",
+  "boto3",
+  "httpx",
+  "cached-path",
+  "smart_open",
+]
+
+[project.optional-dependencies]
+dev = [
+  "ruff",
+  "mypy",
+  "black",
+  "isort",
+  "pytest",
+  "pytest-cov",
+  "build",
+  "setuptools",
+  "wheel",
+]
+
+train = [
+  "torch",
+  "torchvision",
+  "accelerate",
+  "datasets",
+  "peft",
+  "wandb",
+  "omegaconf",
+  "s3fs",
+  "necessary",
+  "einops",
+]
+
+[tool.black]
+exclude = '''
+(
+__pycache__
+    | \.git
+    | \.mypy_cache
+    | \.pytest_cache
+    | \.vscode
+    | \.venv
+    | \bdist\b
+    | \bdoc\b
+)
+line-length = 160
+include = '\.pyi?$'
