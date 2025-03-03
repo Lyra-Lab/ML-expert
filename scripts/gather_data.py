@@ -4,16 +4,19 @@ import argparse
 import json
 import logging
 from pathlib import Path
-from typing import List, Dict
+from typing import List, Dict, Set
 from tqdm import tqdm
 import arxiv
 import requests
 import random
 import time
-
-from olmocr.pipeline import process_pdf_batch
+import asyncio
+from olmocr.pipeline import build_dolma_document, process_pdf
 from olmocr.filter import PdfFilter
-from olmocr.datatypes import Language
+
+from enum import Enum
+class Language(Enum):
+    ENGLISH = "english"
 
 # Set up logging
 logging.basicConfig(
@@ -89,7 +92,7 @@ class MLResourceCollector:
         base_url = "https://api.openreview.net/notes"
         params = {
             "content.venue": venue,
-            "details": "replyCount,directReplyCount", 
+            "details": "replyCount,directReplyCount",
             "sort": "cdate",
             "limit": limit,
             "offset": 0
@@ -167,121 +170,149 @@ class MLResourceCollector:
         self.papers_metadata.extend(papers)
         return papers
 
-    def process_pdfs(self):
-        """
-        Process collected PDFs using olmocr pipeline
-        """
-        logger.info("Processing PDFs with olmocr pipeline")
-        pdf_files = list(self.pdf_dir.glob("*.pdf"))
-
-        if not pdf_files:
-            logger.warning("No PDFs found for processing")
-            return
-
+    async def process_single_pdf(self, pdf_path):
+        """Helper function to process a single PDF"""
         try:
-            # Process PDFs in batches
-            results = process_pdf_batch(
-                pdf_paths=pdf_files,
-                output_dir=str(self.processed_dir),
-                content_filter=self.pdf_filter,
-                model_name="allenai/olmOCR-7B-0225-preview"
+            dolma_doc = await process_pdf(
+                args=type('Args', (), {
+                    'target_longest_image_dim': 1024,
+                    'target_anchor_text_len': 6000,
+                    'max_page_retries': 3,
+                    'max_page_error_rate': 0.004,
+                    'model_max_context': 8192,
+                    'apply_filter': True
+                }),
+                worker_id=0,
+                pdf_orig_path=str(pdf_path)
             )
-            logger.info(f"Successfully processed {len(results)} PDFs")
-            return results
+
+            if dolma_doc:
+                output_path = self.processed_dir / f"{pdf_path.stem}.json"
+                with open(output_path, 'w', encoding='utf-8') as f:
+                    json.dump(dolma_doc, f, ensure_ascii=False, indent=2)
+                return True
+            return False
         except Exception as e:
-            logger.error(f"Failed to process PDFs: {e}")
-            return []
+            logger.error(f"Failed to process {pdf_path}: {e}")
+            return False
+
+    def process_pdfs(self):
+        """Process collected PDFs using olmocr pipeline."""
+        logger.info("Processing PDFs with olmocr...")
+
+        async def process_all_pdfs():
+            pdf_files = list(self.pdf_dir.glob("*.pdf"))
+            logger.info(f"Found {len(pdf_files)} PDFs to process")
+
+            tasks = []
+            async with asyncio.TaskGroup() as tg:
+                for pdf_file in pdf_files:
+                    task = tg.create_task(self.process_single_pdf(pdf_file))
+                    tasks.append(task)
+
+            successful = sum(1 for task in tasks if task.result())
+            logger.info(f"Successfully processed {successful} out of {len(pdf_files)} PDFs")
+
+        asyncio.run(process_all_pdfs())
 
     def create_corpus(self):
-        """
-        Create training corpus from processed documents
-        """
-        logger.info("Creating training corpus")
+        """Create training corpus from processed documents."""
+        logger.info("Creating training corpus from processed documents...")
+
         corpus_data = []
+        processed_files = list(self.processed_dir.glob("*.json"))
 
-        # Read processed JSONL files
-        for jsonl_file in self.processed_dir.glob("*.jsonl"):
+        for proc_file in tqdm(processed_files, desc="Creating corpus"):
             try:
-                with open(jsonl_file, "r", encoding="utf-8") as f:
-                    for line in f:
-                        doc_data = json.loads(line)
+                with open(proc_file, 'r', encoding='utf-8') as f:
+                    doc = json.load(f)
 
-                        # Extract text from processed pages
-                        text_content = ""
-                        for page in doc_data.get("pages", []):
-                            for block in page.get("blocks", []):
-                                if block.get("type") == "text":
-                                    text_content += block.get("text", "") + "\n"
+                doc_id = proc_file.stem
+                metadata = next(
+                    (item for item in self.papers_metadata
+                     if any(doc_id.endswith(str(item['id']))
+                     for source in ['arxiv_', 'openreview_', 'pwc_'])),
+                    None
+                )
 
-                        # Match with metadata
-                        doc_id = jsonl_file.stem
-                        metadata = next((p for p in self.papers_metadata if str(p["id"]) in doc_id), {})
-
-                        entry = {
-                            "title": metadata.get("title", ""),
-                            "authors": metadata.get("authors", []),
-                            "abstract": metadata.get("abstract", ""),
-                            "text": text_content,
-                            "source": metadata.get("source", ""),
-                            "id": metadata.get("id", ""),
-                            "published": metadata.get("published", "")
+                if metadata and doc.get('text'):
+                    corpus_entry = {
+                        'id': doc['id'],
+                        'text': doc['text'],
+                        'metadata': {
+                            **doc['metadata'],
+                            'title': metadata.get('title', ''),
+                            'authors': metadata.get('authors', []),
+                            'abstract': metadata.get('abstract', ''),
+                            'published_date': metadata.get('published', ''),
+                            'source': metadata.get('source', '')
                         }
-                        corpus_data.append(entry)
+                    }
+                    corpus_data.append(corpus_entry)
+
             except Exception as e:
-                logger.error(f"Failed to process {jsonl_file}: {e}")
+                logger.error(f"Error processing {proc_file}: {e}")
 
-        # Create train/val split
-        if corpus_data:
-            random.shuffle(corpus_data)
-            split_idx = int(len(corpus_data) * 0.9)
-            train_data = corpus_data[:split_idx]
-            val_data = corpus_data[split_idx:]
+        corpus_file = self.corpus_dir / "ml_papers_corpus.json"
+        with open(corpus_file, 'w', encoding='utf-8') as f:
+            json.dump(corpus_data, f, ensure_ascii=False, indent=2)
 
-            # Save splits
-            with open(self.corpus_dir / "train_corpus.json", "w", encoding="utf-8") as f:
-                json.dump(train_data, f, ensure_ascii=False, indent=2)
-            with open(self.corpus_dir / "val_corpus.json", "w", encoding="utf-8") as f:
-                json.dump(val_data, f, ensure_ascii=False, indent=2)
-
-            logger.info(f"Created corpus with {len(train_data)} training and {len(val_data)} validation examples")
+        logger.info(f"Created corpus with {len(corpus_data)} documents at {corpus_file}")
 
     def run_pipeline(self, arxiv_queries: List[str], openreview_venues: List[str], pwc_topics: List[str]):
         """
         Run the complete pipeline
         """
-        # Collect papers from all sources
+        logger.info("Starting pipeline run...")
+
+        # Collect papers from all sources with balanced distribution
+        papers_per_source = self.max_papers // 3
         collected_count = 0
 
         # Collect from arXiv
         for query in arxiv_queries:
-            if collected_count >= self.max_papers:
+            if collected_count >= papers_per_source:
                 break
-            papers = self.collect_from_arxiv(query, max_results=min(50, self.max_papers - collected_count))
+            papers = self.collect_from_arxiv(query, max_results=min(50, papers_per_source - collected_count))
             collected_count += len(papers)
+            logger.info(f"Collected {len(papers)} papers from arXiv query: {query}")
 
-        # Collect from OpenReview
+        # Reset counter for OpenReview
+        collected_count = 0
         for venue in openreview_venues:
-            if collected_count >= self.max_papers:
+            if collected_count >= papers_per_source:
                 break
-            papers = self.collect_from_openreview(venue, limit=min(50, self.max_papers - collected_count))
+            papers = self.collect_from_openreview(venue, limit=min(50, papers_per_source - collected_count))
             collected_count += len(papers)
+            logger.info(f"Collected {len(papers)} papers from OpenReview venue: {venue}")
 
-        # Collect from PapersWithCode
+        # Reset counter for PapersWithCode
+        collected_count = 0
         for topic in pwc_topics:
-            if collected_count >= self.max_papers:
+            if collected_count >= papers_per_source:
                 break
-            papers = self.collect_from_paperswithcode(topic, limit=min(50, self.max_papers - collected_count))
+            papers = self.collect_from_paperswithcode(topic, limit=min(50, papers_per_source - collected_count))
             collected_count += len(papers)
+            logger.info(f"Collected {len(papers)} papers from PapersWithCode topic: {topic}")
+
+        total_papers = len(self.papers_metadata)
+        logger.info(f"Total papers collected: {total_papers}")
 
         # Save metadata
-        with open(self.output_dir / "metadata.json", "w", encoding="utf-8") as f:
+        metadata_path = self.output_dir / "metadata.json"
+        with open(metadata_path, "w", encoding="utf-8") as f:
             json.dump(self.papers_metadata, f, ensure_ascii=False, indent=2)
+        logger.info(f"Saved metadata to {metadata_path}")
 
         # Process PDFs with olmocr
+        logger.info("Starting PDF processing...")
         self.process_pdfs()
 
         # Create training corpus
+        logger.info("Creating training corpus...")
         self.create_corpus()
+
+        logger.info("Pipeline completed successfully")
 
 def main():
     parser = argparse.ArgumentParser(description="Collect ML research papers and create a training corpus")
