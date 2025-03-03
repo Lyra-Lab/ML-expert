@@ -1034,6 +1034,7 @@ dependencies = [
     { name = "olmocr" },
     { name = "omegaconf" },
     { name = "orjson" },
+    { name = "pdftotext" },
     { name = "peft" },
     { name = "pillow" },
     { name = "pypdf" },
@@ -1074,6 +1075,7 @@ requires-dist = [
     { name = "olmocr", git = "https://github.com/allenai/olmocr.git" },
     { name = "omegaconf", specifier = ">=2.3.0" },
     { name = "orjson", specifier = ">=3.10.15" },
+    { name = "pdftotext", specifier = ">=3.0.0" },
     { name = "peft", specifier = ">=0.14.0" },
     { name = "pillow", specifier = ">=11.1.0" },
     { name = "pypdf", specifier = ">=5.2.0" },
@@ -1530,6 +1532,12 @@ sdist = { url = "https://files.pythonhosted.org/packages/ca/bc/f35b8446f4531a7cb
 wheels = [
     { url = "https://files.pythonhosted.org/packages/cc/20/ff623b09d963f88bfde16306a54e12ee5ea43e9b597108672ff3a408aad6/pathspec-0.12.1-py3-none-any.whl", hash = "sha256:a0d503e138a4c123b27490a4f7beda6a01c6f288df0e4a8b79c7eb0dc7b4cc08", size = 31191 },
 ]
+
+[[package]]
+name = "pdftotext"
+version = "3.0.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/f0/99/b6c910344eb95f3dddf8e27cddcdebb51765174b0624632db4cd62d3f172/pdftotext-3.0.0.tar.gz", hash = "sha256:c3652b19154e145515a8bfa953fc6136338ed92337bdccbb53fe0d88013b1aaa", size = 113565 }
 
 [[package]]
 name = "peft"

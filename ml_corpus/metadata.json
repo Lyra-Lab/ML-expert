@@ -1,0 +1,1173 @@
+[
+  {
+    "title": "LLM Post-Training: A Deep Dive into Reasoning Large Language Models",
+    "authors": [
+      "Komal Kumar",
+      "Tajamul Ashraf",
+      "Omkar Thawakar",
+      "Rao Muhammad Anwer",
+      "Hisham Cholakkal",
+      "Mubarak Shah",
+      "Ming-Hsuan Yang",
+      "Phillip H. S. Torr",
+      "Salman Khan",
+      "Fahad Shahbaz Khan"
+    ],
+    "abstract": "Large Language Models (LLMs) have transformed the natural language processing\nlandscape and brought to life diverse applications. Pretraining on vast\nweb-scale data has laid the foundation for these models, yet the research\ncommunity is now increasingly shifting focus toward post-training techniques to\nachieve further breakthroughs. While pretraining provides a broad linguistic\nfoundation, post-training methods enable LLMs to refine their knowledge,\nimprove reasoning, enhance factual accuracy, and align more effectively with\nuser intents and ethical considerations. Fine-tuning, reinforcement learning,\nand test-time scaling have emerged as critical strategies for optimizing LLMs\nperformance, ensuring robustness, and improving adaptability across various\nreal-world tasks. This survey provides a systematic exploration of\npost-training methodologies, analyzing their role in refining LLMs beyond\npretraining, addressing key challenges such as catastrophic forgetting, reward\nhacking, and inference-time trade-offs. We highlight emerging directions in\nmodel alignment, scalable adaptation, and inference-time reasoning, and outline\nfuture research directions. We also provide a public repository to continually\ntrack developments in this fast-evolving field:\nhttps://github.com/mbzuai-oryx/Awesome-LLM-Post-training.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21321v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21321v1",
+    "categories": [
+      "cs.CL",
+      "cs.CV"
+    ]
+  },
+  {
+    "title": "Topological Quantum Dark Matter via Global Anomaly Cancellation",
+    "authors": [
+      "Juven Wang"
+    ],
+    "abstract": "Standard Model (SM) with 15 Weyl fermions per family (lacking the 16th, the\nsterile right-handed neutrino $\\nu_R$) suffers from mixed gauge-gravitational\nanomalies tied to baryon number plus or minus lepton number ${\\bf B} \\pm {\\bf\nL}$ symmetry. Including $\\nu_R$ per family can cancel these anomalies, but when\n${\\bf B} \\pm {\\bf L}$ symmetry is preserved as discrete finite subgroups rather\nthan a continuous U(1), the perturbative local anomalies become nonperturbative\nglobal anomalies. In this work, we systematically enumerate these\ngauge-gravitational global anomalies involving discrete ${\\bf B} \\pm {\\bf L}$\nthat are enhanced from the fermion parity $\\mathbb{Z}_2^{\\rm F}$ to\n$\\mathbb{Z}_{2N}^{\\rm F}$, with $N=2,3,4,6,9$, etc. The ${\\bf B} \\pm {\\bf L}$\ndiscreteness is constrained by multi-fermion deformations beyond-the-SM and the\nfamily number $N_f$. Unlike the free quadratic $\\nu_R$ Majorana mass gap\npreserving the minimal $\\mathbb{Z}_2^{\\rm F}$, we explore novel scenarios\ncanceling $({\\bf B} \\pm {\\bf L})$-gravitational anomalies while preserving the\n$\\mathbb{Z}_{2N}^{\\rm F}$ discrete symmetries, featuring 4d interacting gapped\ntopological orders (potentially with or without low-energy TQFT descriptions)\nor gapless sectors (e.g., conformal field theories). We propose anomalous\nsectors as quantum dark matter to cancel SM's global anomalies. We find the\n$N_f=3$ uniqueness, when the $\\mathbb{Z}_{2N}^{\\rm F}$ representation from the\nfaithful ${\\bf B} + {\\bf L}$ for baryons at $N=N_c=3$ is extended to the\nfaithful ${\\bf Q} + N_c {\\bf L}$ for quarks at $N=N_c N_f=9$, this symmetry\nextension matches with the topological order dark matter construction. Key\nimplications include: (1) a 5th force mediating between SM and dark matter via\ndiscrete gauge fields. (2) dark matter as topological order quantum matter with\ngapped anyon excitations at ends of extended defects. (3) topological\nleptogenesis.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21319v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21319v1",
+    "categories": [
+      "hep-th"
+    ]
+  },
+  {
+    "title": "How far can we go with ImageNet for Text-to-Image generation?",
+    "authors": [
+      "L. Degeorge",
+      "A. Ghosh",
+      "N. Dufour",
+      "D. Picard",
+      "V. Kalogeiton"
+    ],
+    "abstract": "Recent text-to-image (T2I) generation models have achieved remarkable results\nby training on billion-scale datasets, following a `bigger is better' paradigm\nthat prioritizes data quantity over quality. We challenge this established\nparadigm by demonstrating that strategic data augmentation of small,\nwell-curated datasets can match or outperform models trained on massive\nweb-scraped collections. Using only ImageNet enhanced with well-designed text\nand image augmentations, we achieve a +2 overall score over SD-XL on GenEval\nand +5 on DPGBench while using just 1/10th the parameters and 1/1000th the\ntraining images. Our results suggest that strategic data augmentation, rather\nthan massive datasets, could offer a more sustainable path forward for T2I\ngeneration.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21318v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21318v1",
+    "categories": [
+      "cs.CV"
+    ]
+  },
+  {
+    "title": "Assessing zero-shot generalisation behaviour in graph-neural-network interatomic potentials",
+    "authors": [
+      "Chiheb Ben Mahmoud",
+      "Zakariya El-Machachi",
+      "Krystian A. Gierczak",
+      "John L. A. Gardner",
+      "Volker L. Deringer"
+    ],
+    "abstract": "With the rapidly growing availability of machine-learned interatomic\npotential (MLIP) models for chemistry, much current research focuses on the\ndevelopment of generally applicable and ``foundational'' MLIPs. An important\nquestion in this context is whether, and how well, such models can transfer\nfrom one application domain to another. Here, we assess this transferability\nfor an MLIP model at the interface of materials and molecular chemistry.\nSpecifically, we study GO-MACE-23, a model designed for the extended covalent\nnetwork of graphene oxide, and quantify its zero-shot performance for small,\nisolated molecules and chemical reactions outside its direct scope--in direct\ncomparison with a state-of-the-art model which has been trained in-domain. Our\nwork provides quantitative insight into the transfer and generalisation ability\nof graph-neural-network potentials and, more generally, makes a step towards\nthe more widespread applicability of MLIPs in chemistry.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21317v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21317v1",
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci"
+    ]
+  },
+  {
+    "title": "Doping dependence of 2-spinon excitations in the doped 1D cuprate Ba$_2$CuO$_{3+δ}$",
+    "authors": [
+      "Jiarui Li",
+      "Daniel Jost",
+      "Ta Tang",
+      "Ruohan Wang",
+      "Yong Zhong",
+      "Zhuoyu Chen",
+      "Mirian Garcia-Fernandez",
+      "Jonathan Pelliciari",
+      "Valentina Bisogni",
+      "Brian Moritz",
+      "Kejin Zhou",
+      "Yao Wang",
+      "Thomas P. Devereaux",
+      "Wei-Sheng Lee",
+      "Zhi-Xun Shen"
+    ],
+    "abstract": "Recent photoemission experiments on the quasi-one-dimensional Ba-based\ncuprates suggest that doped holes experience an attractive potential not\ncaptured using the simple Hubbard model. This observation has garnered\nsignificant attention due to its potential relevance to Cooper pair formation\nin high-$T_c$ cuprate superconductors. To scrutinize this assertion, we\nexamined signatures of such an attractive potential in doped 1D cuprates\nBa$_2$CuO$_{3+\\delta}$ by measuring the dispersion of the 2-spinon excitations\nusing Cu $L_3$-edge resonant inelastic X-ray scattering (RIXS). Upon doping,\nthe 2-spinon excitations appear to weaken, with a shift of the minimal position\ncorresponding to the nesting vector of the Fermi points, $q_F$. Notably, we\nfind that the energy scale of the 2-spinons near the Brillouin zone boundary is\nsubstantially softened compared to that predicted by the Hubbard model in\none-dimension. Such a discrepancy implies missing ingredients, which lends\nsupport for the presence of an additional attractive potential between holes.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21316v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21316v1",
+    "categories": [
+      "cond-mat.str-el"
+    ]
+  },
+  {
+    "title": "Identifying Emerging Concepts in Large Corpora",
+    "authors": [
+      "Sibo Ma",
+      "Julian Nyarko"
+    ],
+    "abstract": "We introduce a new method to identify emerging concepts in large text\ncorpora. By analyzing changes in the heatmaps of the underlying embedding\nspace, we are able to detect these concepts with high accuracy shortly after\nthey originate, in turn outperforming common alternatives. We further\ndemonstrate the utility of our approach by analyzing speeches in the U.S.\nSenate from 1941 to 2015. Our results suggest that the minority party is more\nactive in introducing new concepts into the Senate discourse. We also identify\nspecific concepts that closely correlate with the Senators' racial, ethnic, and\ngender identities. An implementation of our method is publicly available.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21315v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21315v1",
+    "categories": [
+      "cs.CL",
+      "cs.CY"
+    ]
+  },
+  {
+    "title": "Raccoon: Multi-stage Diffusion Training with Coarse-to-Fine Curating Videos",
+    "authors": [
+      "Zhiyu Tan",
+      "Junyan Wang",
+      "Hao Yang",
+      "Luozheng Qin",
+      "Hesen Chen",
+      "Qiang Zhou",
+      "Hao Li"
+    ],
+    "abstract": "Text-to-video generation has demonstrated promising progress with the advent\nof diffusion models, yet existing approaches are limited by dataset quality and\ncomputational resources. To address these limitations, this paper presents a\ncomprehensive approach that advances both data curation and model design. We\nintroduce CFC-VIDS-1M, a high-quality video dataset constructed through a\nsystematic coarse-to-fine curation pipeline. The pipeline first evaluates video\nquality across multiple dimensions, followed by a fine-grained stage that\nleverages vision-language models to enhance text-video alignment and semantic\nrichness. Building upon the curated dataset's emphasis on visual quality and\ntemporal coherence, we develop RACCOON, a transformer-based architecture with\ndecoupled spatial-temporal attention mechanisms. The model is trained through a\nprogressive four-stage strategy designed to efficiently handle the complexities\nof video generation. Extensive experiments demonstrate that our integrated\napproach of high-quality data curation and efficient training strategy\ngenerates visually appealing and temporally coherent videos while maintaining\ncomputational efficiency. We will release our dataset, code, and models.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21314v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21314v1",
+    "categories": [
+      "cs.CV"
+    ]
+  },
+  {
+    "title": "Unsupervised Parameter Efficient Source-free Post-pretraining",
+    "authors": [
+      "Abhishek Jha",
+      "Tinne Tuytelaars",
+      "Yuki M. Asano"
+    ],
+    "abstract": "Following the success in NLP, the best vision models are now in the billion\nparameter ranges. Adapting these large models to a target distribution has\nbecome computationally and economically prohibitive. Addressing this challenge,\nwe introduce UpStep, an Unsupervised Parameter-efficient Source-free\npost-pretraining approach, designed to efficiently adapt a base model from a\nsource domain to a target domain: i) we design a self-supervised training\nscheme to adapt a pretrained model on an unlabeled target domain in a setting\nwhere source domain data is unavailable. Such source-free setting comes with\nthe risk of catastrophic forgetting, hence, ii) we propose center vector\nregularization (CVR), a set of auxiliary operations that minimize catastrophic\nforgetting and additionally reduces the computational cost by skipping\nbackpropagation in 50\\% of the training iterations. Finally iii) we perform\nthis adaptation process in a parameter-efficient way by adapting the pretrained\nmodel through low-rank adaptation methods, resulting in a fraction of\nparameters to optimize. We utilize various general backbone architectures, both\nsupervised and unsupervised, trained on Imagenet as our base model and adapt\nthem to a diverse set of eight target domains demonstrating the adaptability\nand generalizability of our proposed approach.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21313v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21313v1",
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ]
+  },
+  {
+    "title": "AutoComb: Automated Comb Sign Detector for 3D CTE Scans",
+    "authors": [
+      "Shashwat Gupta",
+      "Sarthak Gupta",
+      "Akshan Agrawal",
+      "Mahim Naaz",
+      "Rajanikanth Yadav",
+      "Priyanka Bagade"
+    ],
+    "abstract": "Comb Sign is an important imaging biomarker to detect multiple\ngastrointestinal diseases. It shows up as increased blood flow along the\nintestinal wall indicating potential abnormality, which helps doctors diagnose\ninflammatory conditions. Despite its clinical significance, current detection\nmethods are manual, time-intensive, and prone to subjective interpretation due\nto the need for multi-planar image-orientation. To the best of our knowledge,\nwe are the first to propose a fully automated technique for the detection of\nComb Sign from CTE scans. Our novel approach is based on developing a\nprobabilistic map that shows areas of pathological hypervascularity by\nidentifying fine vascular bifurcations and wall enhancement via processing\nthrough stepwise algorithmic modules. These modules include utilising deep\nlearning segmentation model, a Gaussian Mixture Model (GMM), vessel extraction\nusing vesselness filter, iterative probabilistic enhancement of vesselness via\nneighborhood maximization and a distance-based weighting scheme over the\nvessels. Experimental results demonstrate that our pipeline effectively\nidentifies Comb Sign, offering an objective, accurate, and reliable tool to\nenhance diagnostic accuracy in Crohn's disease and related hypervascular\nconditions where Comb Sign is considered as one of the important biomarkers.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21311v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21311v1",
+    "categories": [
+      "eess.IV",
+      "cs.CV"
+    ]
+  },
+  {
+    "title": "FANformer: Improving Large Language Models Through Effective Periodicity Modeling",
+    "authors": [
+      "Yihong Dong",
+      "Ge Li",
+      "Xue Jiang",
+      "Yongding Tao",
+      "Kechi Zhang",
+      "Hao Zhu",
+      "Huanyu Liu",
+      "Jiazheng Ding",
+      "Jia Li",
+      "Jinliang Deng",
+      "Hong Mei"
+    ],
+    "abstract": "Periodicity, as one of the most important basic characteristics, lays the\nfoundation for facilitating structured knowledge acquisition and systematic\ncognitive processes within human learning paradigms. However, the potential\nflaws of periodicity modeling in Transformer affect the learning efficiency and\nestablishment of underlying principles from data for large language models\n(LLMs) built upon it. In this paper, we demonstrate that integrating effective\nperiodicity modeling can improve the learning efficiency and performance of\nLLMs. We introduce FANformer, which integrates Fourier Analysis Network (FAN)\ninto attention mechanism to achieve efficient periodicity modeling, by\nmodifying the feature projection process of attention mechanism. Extensive\nexperimental results on language modeling show that FANformer consistently\noutperforms Transformer when scaling up model size and training tokens,\nunderscoring its superior learning efficiency. To further validate the\neffectiveness of FANformer, we pretrain a FANformer-1B on 1 trillion tokens.\nFANformer-1B exhibits marked improvements on downstream tasks compared to\nopen-source LLMs with similar model parameters or training tokens. The results\nposition FANformer as an effective and promising architecture for advancing\nLLMs.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21309v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21309v1",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG"
+    ]
+  },
+  {
+    "title": "Solar prosumage under different pricing regimes: Interactions with the transmission grid",
+    "authors": [
+      "Dana Kirchem",
+      "Mario Kendziorski",
+      "Enno Wiebrow",
+      "Wolf-Peter Schill",
+      "Claudia Kemfert",
+      "Christian von Hirschhausen"
+    ],
+    "abstract": "Solar prosumers, residential electricity consumers equipped with photovoltaic\n(PV) systems and battery storage, are transforming electricity markets. Their\ninteractions with the transmission grid under varying tariff designs are not\nyet fully understood. We explore the influence of different pricing regimes on\nprosumer investment and dispatch decisions and their subsequent impact on the\ntransmission grid. Using an integrated modeling approach that combines two\nopen-source dispatch, investment and grid models, we simulate prosumage\nbehavior in Germany's electricity market under real-time pricing or\ntime-invariant pricing, as well as under zonal or nodal pricing. Our findings\nshow that zonal pricing favors prosumer investments, while time-invariant\npricing rather hinders it. In comparison, regional solar availability emerges\nas a larger driver for rooftop PV investments. The impact of prosumer\nstrategies on grid congestion remains limited within the scope of our\nmodel-setup, in which home batteries cannot be used for energy arbitrage.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21306v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21306v1",
+    "categories": [
+      "econ.GN",
+      "q-fin.EC"
+    ]
+  },
+  {
+    "title": "CurviTrack: Curvilinear Trajectory Tracking for High-speed Chase of a USV",
+    "authors": [
+      "Parakh M. Gupta",
+      "Ondřej Procházka",
+      "Tiago Nascimento",
+      "Martin Saska"
+    ],
+    "abstract": "Heterogeneous robot teams used in marine environments incur time-and-energy\npenalties when the marine vehicle has to halt the mission to allow the\nautonomous aerial vehicle to land for recharging. In this paper, we present a\nsolution for this problem using a novel drag-aware model formulation which is\ncoupled with MPC, and therefore, enables tracking and landing during high-speed\ncurvilinear trajectories of an USV without any communication. Compared to the\nstate-of-the-art, our approach yields 40% decrease in prediction errors, and\nprovides a 3-fold increase in certainty of predictions. Consequently, this\nleads to a 30% improvement in tracking performance and 40% higher success in\nlanding on a moving USV even during aggressive turns that are unfeasible for\nconventional marine missions. We test our approach in two different real-world\nscenarios with marine vessels of two different sizes and further solidify our\nresults through statistical analysis in simulation to demonstrate the\nrobustness of our method.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21303v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21303v1",
+    "categories": [
+      "cs.RO",
+      "cs.SY",
+      "eess.SY"
+    ]
+  },
+  {
+    "title": "Hybrid Team Tetris: A New Platform For Hybrid Multi-Agent, Multi-Human Teaming",
+    "authors": [
+      "Kaleb Mcdowell",
+      "Nick Waytowich",
+      "Javier Garcia",
+      "Stephen Gordon",
+      "Bryce Bartlett",
+      "Jeremy Gaston"
+    ],
+    "abstract": "Metcalfe et al (1) argue that the greatest potential for human-AI\npartnerships lies in their application to highly complex problem spaces.\nHerein, we discuss three different forms of hybrid team intelligence and posit\nthat across all three forms, the hybridization of man and machine intelligence\ncan be effective under the right conditions. We foresee two significant\nresearch and development (R&D) challenges underlying the creation of effective\nhybrid intelligence. First, rapid advances in machine intelligence and/or\nfundamental changes in human behaviors or capabilities over time can outpace\nR&D. Second, the future conditions under which hybrid intelligence will operate\nare unknown, but unlikely to be the same as the conditions of today. Overcoming\nboth of these challenges requires a deep understanding of multiple\nhuman-centric and machine-centric disciplines that creates a large barrier to\nentry into the field. Herein, we outline an open, shareable research platform\nthat creates a form of hybrid team intelligence that functions under\nrepresentative future conditions. The intent for the platform is to facilitate\nnew forms of hybrid intelligence research allowing individuals with\nhuman-centric or machine-centric backgrounds to rapidly enter the field and\ninitiate research. Our hope is that through open, community research on the\nplatform, state-of-the-art advances in human and machine intelligence can\nquickly be communicated across what are currently different R&D communities and\nallow hybrid team intelligence research to stay at the forefront of scientific\nadvancement.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21300v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21300v1",
+    "categories": [
+      "cs.HC"
+    ]
+  },
+  {
+    "title": "Persuasion Should be Double-Blind: A Multi-Domain Dialogue Dataset With Faithfulness Based on Causal Theory of Mind",
+    "authors": [
+      "Dingyi Zhang",
+      "Deyu Zhou"
+    ],
+    "abstract": "Persuasive dialogue plays a pivotal role in human communication, influencing\nvarious domains. Recent persuasive dialogue datasets often fail to align with\nreal-world interpersonal interactions, leading to unfaithful representations.\nFor instance, unrealistic scenarios may arise, such as when the persuadee\nexplicitly instructs the persuader on which persuasion strategies to employ,\nwith each of the persuadee's questions corresponding to a specific strategy for\nthe persuader to follow. This issue can be attributed to a violation of the\n\"Double Blind\" condition, where critical information is fully shared between\nparticipants. In actual human interactions, however, key information such as\nthe mental state of the persuadee and the persuasion strategies of the\npersuader is not directly accessible. The persuader must infer the persuadee's\nmental state using Theory of Mind capabilities and construct arguments that\nalign with the persuadee's motivations. To address this gap, we introduce\nToMMA, a novel multi-agent framework for dialogue generation that is guided by\ncausal Theory of Mind. This framework ensures that information remains\nundisclosed between agents, preserving \"double-blind\" conditions, while causal\nToM directs the persuader's reasoning, enhancing alignment with human-like\npersuasion dynamics. Consequently, we present CToMPersu, a multi-domain,\nmulti-turn persuasive dialogue dataset that tackles both double-blind and\nlogical coherence issues, demonstrating superior performance across multiple\nmetrics and achieving better alignment with real human dialogues. Our dataset\nand prompts are available at https://github.com/DingyiZhang/ToMMA-CToMPersu .",
+    "pdf_url": "http://arxiv.org/pdf/2502.21297v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21297v1",
+    "categories": [
+      "cs.CL"
+    ]
+  },
+  {
+    "title": "Oscillatory finite-time singularities in rockbursts",
+    "authors": [
+      "Qinghua Lei",
+      "Didier Sornette"
+    ],
+    "abstract": "Forecasting violent rockbursts remains a formidable challenge due to\nsignificant uncertainties involved. One major uncertainty arises from the\nintermittency of rock failure processes, typically characterised by a series of\nprogressively shorter quiescent phases punctuated by sudden accelerations,\nrather than a smooth continuous progression towards the final breakdown. This\nnon-monotonic evolution of rock mass deformation complicates rockburst\nprediction, challenging conventional time-to-failure models that often assume a\nsmooth power law accelerating behaviour. Here, we introduce a generalised\ntime-to-failure model called log-periodic power law singularity (LPPLS) model\nto effectively capture the intermittent dynamics of damage and rupture\nprocesses in rock leading up to violent rockbursts. We perform parametric and\nnonparametric tests on 11 historical rockburst events at three underground\nmines, documenting empirical evidence and providing theoretical arguments to\ndemonstrate the significance of log-periodic oscillatory power law finite-time\nsingularities. Log-periodicity in these rockburst events is likely driven by\nthe interaction of subparallel propagating cracks, the diffusion of\nstress-triggering processes, or the interplay between stress drop and stress\ncorrosion. Our results and insights obtained have significant implications for\nnot only understanding but also forecasting rockbursts, as recognising and\ncharacterising log-periodicity can help transform intermittency from\ntraditionally perceived noise into valuable predictive information.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21296v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21296v1",
+    "categories": [
+      "physics.geo-ph"
+    ]
+  },
+  {
+    "title": "On the role of 5-wave resonances in the nonlinear dynamics of the Fermi-Pasta-Ulam-Tsingou lattice",
+    "authors": [
+      "Tiziana Comito",
+      "Matteo Lotriglia",
+      "Miguel D. Bustamante"
+    ],
+    "abstract": "We study the dynamics of the $(\\alpha+\\beta)$ Fermi-Pasta-Ulam-Tsingou\nlattice (FPUT lattice, for short) for an arbitrary number $N$ of interacting\nparticles, in regimes of small enough nonlinearity so that a Birkhoff-Gustavson\ntype of normal form can be found using tools from wave-turbulence theory.\nSpecifically, we obtain the so-called Zakharov equation for $4$-wave resonant\ninteractions and its extension to $5$-wave resonant interactions by Krasitskii,\nbut we introduce an important new feature: even the generic terms in these\nnormal forms contain $resonant$ $interactions$ $only$, via a $unique$ canonical\ntransformation. The resulting normal forms provide an approximation to the\noriginal FPUT lattice that possesses a significant number of exact quadratic\nconservation laws, beyond the quadratic part of the Hamiltonian. We call the\nnew equations \"exact-resonance evolution equations\" and examine their\nproperties: (i) Heisenberg representation's slow evolution allows us to\nimplement numerical methods with large time steps to obtain relevant dynamical\ninformation, such as Lyapunov exponents. (ii) We introduce tests, such as\nconvergence of the normal form transformation and truncation error\nverification, to successfully validate our exact-resonance evolution equations.\n(iii) The systematic construction of new quadratic invariants (via the resonant\ncluster matrix) allows us to use finite-time Lyapunov exponent calculations to\nquantify the level of nonlinearity at which the original FPUT lattice is well\napproximated by the exact-resonance evolution equations. We show numerical\nexperiments in the case $N=9$, but the theory and numerical methods are valid\nfor arbitrary values of $N$. We conclude that, when $3$ divides $N$, at small\nenough nonlinearity the FPUT lattice's dynamics and nontrivial hyperchaos are\ngoverned by $5$-wave resonant interactions.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21293v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21293v1",
+    "categories": [
+      "nlin.CD",
+      "nlin.PS"
+    ]
+  },
+  {
+    "title": "Bilevel Optimized Implicit Neural Representation for Scan-Specific Accelerated MRI Reconstruction",
+    "authors": [
+      "Hongze Yu",
+      "Jeffrey A. Fessler",
+      "Yun Jiang"
+    ],
+    "abstract": "Deep Learning (DL) methods can reconstruct highly accelerated magnetic\nresonance imaging (MRI) scans, but they rely on application-specific large\ntraining datasets and often generalize poorly to out-of-distribution data.\nSelf-supervised deep learning algorithms perform scan-specific reconstructions,\nbut still require complicated hyperparameter tuning based on the acquisition\nand often offer limited acceleration. This work develops a bilevel-optimized\nimplicit neural representation (INR) approach for scan-specific MRI\nreconstruction. The method automatically optimizes the hyperparameters for a\ngiven acquisition protocol, enabling a tailored reconstruction without training\ndata. The proposed algorithm uses Gaussian process regression to optimize INR\nhyperparameters, accommodating various acquisitions. The INR includes a\ntrainable positional encoder for high-dimensional feature embedding and a small\nmultilayer perceptron for decoding. The bilevel optimization is computationally\nefficient, requiring only a few minutes per typical 2D Cartesian scan. On\nscanner hardware, the subsequent scan-specific reconstruction-using\noffline-optimized hyperparameters-is completed within seconds and achieves\nimproved image quality compared to previous model-based and self-supervised\nlearning methods.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21292v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21292v1",
+    "categories": [
+      "eess.IV",
+      "eess.SP"
+    ]
+  },
+  {
+    "title": "MIGE: A Unified Framework for Multimodal Instruction-Based Image Generation and Editing",
+    "authors": [
+      "Xueyun Tian",
+      "Wei Li",
+      "Bingbing Xu",
+      "Yige Yuan",
+      "Yuanzhuo Wang",
+      "Huawei Shen"
+    ],
+    "abstract": "Despite significant progress in diffusion-based image generation,\nsubject-driven generation and instruction-based editing remain challenging.\nExisting methods typically treat them separately, struggling with limited\nhigh-quality data and poor generalization. However, both tasks require\ncapturing complex visual variations while maintaining consistency between\ninputs and outputs. Therefore, we propose MIGE, a unified framework that\nstandardizes task representations using multimodal instructions. It treats\nsubject-driven generation as creation on a blank canvas and instruction-based\nediting as modification of an existing image, establishing a shared\ninput-output formulation. MIGE introduces a novel multimodal encoder that maps\nfree-form multimodal instructions into a unified vision-language space,\nintegrating visual and semantic features through a feature fusion\nmechanism.This unification enables joint training of both tasks, providing two\nkey advantages: (1) Cross-Task Enhancement: By leveraging shared visual and\nsemantic representations, joint training improves instruction adherence and\nvisual consistency in both subject-driven generation and instruction-based\nediting. (2) Generalization: Learning in a unified format facilitates\ncross-task knowledge transfer, enabling MIGE to generalize to novel\ncompositional tasks, including instruction-based subject-driven editing.\nExperiments show that MIGE excels in both subject-driven generation and\ninstruction-based editing while setting a state-of-the-art in the new task of\ninstruction-based subject-driven editing. Code and model have been publicly\navailable at https://github.com/Eureka-Maggie/MIGE.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21291v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21291v1",
+    "categories": [
+      "cs.CV"
+    ]
+  },
+  {
+    "title": "Contextualizing biological perturbation experiments through language",
+    "authors": [
+      "Menghua Wu",
+      "Russell Littman",
+      "Jacob Levine",
+      "Lin Qiu",
+      "Tommaso Biancalani",
+      "David Richmond",
+      "Jan-Christian Huetter"
+    ],
+    "abstract": "High-content perturbation experiments allow scientists to probe biomolecular\nsystems at unprecedented resolution, but experimental and analysis costs pose\nsignificant barriers to widespread adoption. Machine learning has the potential\nto guide efficient exploration of the perturbation space and extract novel\ninsights from these data. However, current approaches neglect the semantic\nrichness of the relevant biology, and their objectives are misaligned with\ndownstream biological analyses. In this paper, we hypothesize that large\nlanguage models (LLMs) present a natural medium for representing complex\nbiological relationships and rationalizing experimental outcomes. We propose\nPerturbQA, a benchmark for structured reasoning over perturbation experiments.\nUnlike current benchmarks that primarily interrogate existing knowledge,\nPerturbQA is inspired by open problems in perturbation modeling: prediction of\ndifferential expression and change of direction for unseen perturbations, and\ngene set enrichment. We evaluate state-of-the-art machine learning and\nstatistical approaches for modeling perturbations, as well as standard LLM\nreasoning strategies, and we find that current methods perform poorly on\nPerturbQA. As a proof of feasibility, we introduce Summer (SUMMarize, retrievE,\nand answeR, a simple, domain-informed LLM framework that matches or exceeds the\ncurrent state-of-the-art. Our code and data are publicly available at\nhttps://github.com/genentech/PerturbQA.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21290v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21290v1",
+    "categories": [
+      "cs.AI",
+      "cs.LG",
+      "q-bio.QM"
+    ]
+  },
+  {
+    "title": "Flow-Driven Rotor Simulations of Seyi-Chunlei Ducted Turbine",
+    "authors": [
+      "Seyi Oluwadare",
+      "Chunlei Liang"
+    ],
+    "abstract": "This paper proposes an improved Clarkson Ducted Wind Turbine (DWT) design\nusing a new diffuser based on the Selig S1223 airfoil at an angle of attack\n(AoA) of 20 degrees and a smaller tip clearance. This proposed design is hereby\nnamed Selig20 Clarkson Ducted Turbine or Seyi-Chunlei Ducted Turbine (SCDT)\ncompared to the original Clarkson Ducted Wind Turbine (CDWT). In both SCDT and\nCDWT configurations, the rotor is placed a distance behind the throat of the\nduct. For in-depth analysis, we employ a flow-driven-rotor (FDR) model of a\ncommercial CFD package, Simerics-MP+, based on unstructured-grid finite-volume\nsolutions of Unsteady Reynolds-Averaged Navier-Stokes (URANS) equations for the\nflow field that are two-way fully coupled with a dynamic solution of the\nrigid-body rotation of the turbine rotor. The FDR model successfully predicts\nthe optimal thrust coefficient, whereas the prescribed rotation model fails to\ndo so. Although the optimal Cp predicted by the FDR model is fairly close to\nthe prediction from the prescribed motion model, FDR is generally more accurate\nin predicting underperformance under ambient wind conditions away from the\noptimal tip speed ratio. FDR offers a new path to simulate ducted wind turbines\nin ambient wind conditions. The Seyi-Chunlei Ducted Turbine is confirmed to\nhave a Cpt peak approximately 7% higher than that of the Clarkson DWT. SCDT\nalso has a wider range of optimal tip speed ratios, enabling it to harvest more\nwind energy under ambient conditions.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21289v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21289v1",
+    "categories": [
+      "physics.flu-dyn"
+    ]
+  },
+  {
+    "title": "Enabling AutoML for Zero-Touch Network Security: Use-Case Driven Analysis",
+    "authors": [
+      "Li Yang",
+      "Mirna El Rajab",
+      "Abdallah Shami",
+      "Sami Muhaidat"
+    ],
+    "abstract": "Zero-Touch Networks (ZTNs) represent a state-of-the-art paradigm shift\ntowards fully automated and intelligent network management, enabling the\nautomation and intelligence required to manage the complexity, scale, and\ndynamic nature of next-generation (6G) networks. ZTNs leverage Artificial\nIntelligence (AI) and Machine Learning (ML) to enhance operational efficiency,\nsupport intelligent decision-making, and ensure effective resource allocation.\nHowever, the implementation of ZTNs is subject to security challenges that need\nto be resolved to achieve their full potential. In particular, two critical\nchallenges arise: the need for human expertise in developing AI/ML-based\nsecurity mechanisms, and the threat of adversarial attacks targeting AI/ML\nmodels. In this survey paper, we provide a comprehensive review of current\nsecurity issues in ZTNs, emphasizing the need for advanced AI/ML-based security\nmechanisms that require minimal human intervention and protect AI/ML models\nthemselves. Furthermore, we explore the potential of Automated ML (AutoML)\ntechnologies in developing robust security solutions for ZTNs. Through case\nstudies, we illustrate practical approaches to securing ZTNs against both\nconventional and AI/ML-specific threats, including the development of\nautonomous intrusion detection systems and strategies to combat Adversarial ML\n(AML) attacks. The paper concludes with a discussion of the future research\ndirections for the development of ZTN security approaches.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21286v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21286v1",
+    "categories": [
+      "cs.CR",
+      "cs.LG",
+      "cs.NI",
+      "68T01, 90C31",
+      "I.2.1; I.2.6; C.2.0"
+    ]
+  },
+  {
+    "title": "Controlled Model Debiasing through Minimal and Interpretable Updates",
+    "authors": [
+      "Federico Di Gennaro",
+      "Thibault Laugel",
+      "Vincent Grari",
+      "Marcin Detyniecki"
+    ],
+    "abstract": "Traditional approaches to learning fair machine learning models often require\nrebuilding models from scratch, generally without accounting for potentially\nexisting previous models. In a context where models need to be retrained\nfrequently, this can lead to inconsistent model updates, as well as redundant\nand costly validation testing. To address this limitation, we introduce the\nnotion of controlled model debiasing, a novel supervised learning task relying\non two desiderata: that the differences between new fair model and the existing\none should be (i) interpretable and (ii) minimal. After providing theoretical\nguarantees to this new problem, we introduce a novel algorithm for algorithmic\nfairness, COMMOD, that is both model-agnostic and does not require the\nsensitive attribute at test time. In addition, our algorithm is explicitly\ndesigned to enforce minimal and interpretable changes between biased and\ndebiased predictions -a property that, while highly desirable in high-stakes\napplications, is rarely prioritized as an explicit objective in fairness\nliterature. Our approach combines a concept-based architecture and adversarial\nlearning and we demonstrate through empirical results that it achieves\ncomparable performance to state-of-the-art debiasing methods while performing\nminimal and interpretable prediction changes.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21284v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21284v1",
+    "categories": [
+      "cs.LG",
+      "stat.ML"
+    ]
+  },
+  {
+    "title": "Reconstruction of spider system's observables from orbital period modulations via the Applegate mechanism",
+    "authors": [
+      "Vittorio De Falco",
+      "Amodio Carleo",
+      "Alessandro Ridolfi",
+      "Alessandro Corongiu"
+    ],
+    "abstract": "Redback and black widow pulsars are two classes of peculiar binary systems\ncharacterized by very short orbital periods, very low mass companions, and, in\nseveral cases, regular eclipses in their pulsed radio signal. Long-term timing\nrevealed systematic but unpredictable variations in the orbital period, which\ncan most likely be explained by the so-called Applegate mechanism. This relies\non the magnetic dynamo activity generated inside the companion star and\ntriggered by the pulsar wind, which induces a modification of the star's\noblateness (or quadrupole variation). This, in turn, couples with the orbit by\ngravity, causing a consequent change in the orbital period. The Applegate\ndescription limits to provide estimates of physical quantities by highlighting\ntheir orders of magnitude. Therefore, we derive the time-evolution differential\nequations underlying the Applegate model, that is, we track such physical\nquantities in terms of time. Our strategy is to employ the orbital period\nmodulations, measured by fitting the observational data, and implementing a\nhighly accurate approximation scheme to finally reconstruct the dynamics of the\nspider system under study and the relative observables. Among the latter is the\nmagnetic field activity inside the companion star, which is still a matter of\ndebate for its complex theoretical modeling and the ensuing expensive numerical\nsimulations. As an application, we exploit our methodology to examine two\nspider sources: 47 Tuc W (redback) and 47 Tuc O (black widow). The results\nobtained are analyzed and then discussed with the literature.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21283v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21283v1",
+    "categories": [
+      "astro-ph.HE",
+      "hep-th"
+    ]
+  },
+  {
+    "title": "Large Sample Inference with Dynamic Information Borrowing",
+    "authors": [
+      "Sergey Tarima",
+      "Silvia Calderazzo",
+      "Mary Homan"
+    ],
+    "abstract": "Large sample behavior of dynamic information borrowing (DIB) estimators is\ninvestigated. Asymptotic properties of several DIB approaches (adaptive risk\nminimization, adaptive LASSO, Bayesian procedures with empirical power prior,\nfully Bayesian procedures, and a Bayes-frequentist compromise) are explored\nagainst shrinking to zero alternatives. As shown theoretically and with\nsimulations, local asymptotic distributions of DIB estimators are often\nnon-normal. A simple Gaussian setting with external information borrowing\nillustrates that none of the considered DIB methods outperforms others in terms\nof mean squared error (MSE): at different conflict values, the MSEs of DIBs are\nchanging between the MSEs of the maximum likelihood estimators based on the\ncurrent and pooled data. To uniquely determine an optimality criterion for DIB,\na prior distribution on the conflict needs be either implicitly or explicitly\ndetermined using data independent considerations. Data independent assumptions\non the conflict are also needed for DIB-based hypothesis testing. New families\nof DIB estimators parameterized by a sensitivity-to-conflict parameter S are\nsuggested and their use is illustrated in an infant mortality example. The\nchoice of S is determined in a data-independent manner by a cost-benefit\ncompromise associated with the use of external data.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21282v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21282v1",
+    "categories": [
+      "stat.ME"
+    ]
+  },
+  {
+    "title": "Back to the Future Cyclopean Stereo: a human perception approach unifying deep and geometric constraints",
+    "authors": [
+      "Sherlon Almeida da Silva",
+      "Davi Geiger",
+      "Luiz Velho",
+      "Moacir Antonelli Ponti"
+    ],
+    "abstract": "We innovate in stereo vision by explicitly providing analytical 3D surface\nmodels as viewed by a cyclopean eye model that incorporate depth\ndiscontinuities and occlusions. This geometrical foundation combined with\nlearned stereo features allows our system to benefit from the strengths of both\napproaches. We also invoke a prior monocular model of surfaces to fill in\nocclusion regions or texture-less regions where data matching is not\nsufficient. Our results already are on par with the state-of-the-art purely\ndata-driven methods and are of much better visual quality, emphasizing the\nimportance of the 3D geometrical model to capture critical visual information.\nSuch qualitative improvements may find applicability in virtual reality, for a\nbetter human experience, as well as in robotics, for reducing critical errors.\nOur approach aims to demonstrate that understanding and modeling geometrical\nproperties of 3D surfaces is beneficial to computer vision research.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21280v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21280v1",
+    "categories": [
+      "cs.CV"
+    ]
+  },
+  {
+    "title": "Does Generation Require Memorization? Creative Diffusion Models using Ambient Diffusion",
+    "authors": [
+      "Kulin Shah",
+      "Alkis Kalavasis",
+      "Adam R. Klivans",
+      "Giannis Daras"
+    ],
+    "abstract": "There is strong empirical evidence that the state-of-the-art diffusion\nmodeling paradigm leads to models that memorize the training set, especially\nwhen the training set is small. Prior methods to mitigate the memorization\nproblem often lead to a decrease in image quality. Is it possible to obtain\nstrong and creative generative models, i.e., models that achieve high\ngeneration quality and low memorization? Despite the current pessimistic\nlandscape of results, we make significant progress in pushing the trade-off\nbetween fidelity and memorization. We first provide theoretical evidence that\nmemorization in diffusion models is only necessary for denoising problems at\nlow noise scales (usually used in generating high-frequency details). Using\nthis theoretical insight, we propose a simple, principled method to train the\ndiffusion models using noisy data at large noise scales. We show that our\nmethod significantly reduces memorization without decreasing the image quality,\nfor both text-conditional and unconditional models and for a variety of data\navailability settings.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21278v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21278v1",
+    "categories": [
+      "cs.LG",
+      "stat.ML"
+    ]
+  },
+  {
+    "title": "Log-Periodic Precursors to Volcanic Eruptions: Evidence from 34 Events",
+    "authors": [
+      "Qinghua Lei",
+      "Didier Sornette"
+    ],
+    "abstract": "Forecasting volcanic eruptions remains a formidable challenge due to the\ninherent complexity and variability of volcanic processes. A key source of\nuncertainty arises from the sporadic nature of volcanic unrest, which is often\ncharacterised by intermittent phases of quiescent deceleration and sudden\nacceleration, rather than a consistent, predictable progression towards\neruption. This seemingly erratic pattern complicates volcano forecasting as it\nchallenges conventional time-to-failure models that often assume a simple\nsmooth power law acceleration. We propose a log-periodic power law singularity\nmodel, which effectively captures the intermittent and non-monotonic rupture\ndynamics characteristic of reawakening volcanoes at the site scale.\nMathematically, generalising the power law exponent by extending it from real\nto complex numbers, this model captures the partial break of continuous scale\ninvariance to discrete scale invariance that is inherent to the intermittent\ndynamics of damage and rupture processes in heterogeneous crustal systems. By\nperforming parametric and nonparametric tests on a large dataset of 34\nhistorical eruptions worldwide, we present empirical evidence and theoretical\narguments demonstrating the statistical significance of log-periodic\noscillations decorating power law finite-time singularities during pre-eruptive\nvolcanic unrest. Log-periodicity in volcanoes may originate from various\nmechanisms, including diffusion-dominated magma flow, magma-driven propagation\nof subparallel dykes, interaction between stress drop and stress corrosion,\nand/or interplay of inertia, damage, and healing within volcanic systems. Our\nresults have important implications for volcano forecasting, because\nunderstanding and characterising log-periodicity could turn the intermittency\nof volcanic activity from a challenge into a valuable asset for improving\npredictions.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21277v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21277v1",
+    "categories": [
+      "physics.geo-ph"
+    ]
+  },
+  {
+    "title": "Utilizing Quantum Fingerprints in Plant Cells to Evaluate Plant productivity",
+    "authors": [
+      "Umadini Ranasinghe",
+      "Abigail L. Stressinger",
+      "Guangpeng Xu",
+      "Yasmin Sarhan",
+      "Fred Harrington",
+      "James Berry",
+      "Tim Thomay"
+    ],
+    "abstract": "Overcoming the strong chlorophyll background poses a significant challenge\nfor measuring and optimizing plant growth. This research investigates the novel\napplication of specialized quantum light emitters introduced into intact leaves\nof tobacco (Nicotiana tabacum), a well-characterized model plant system for\nstudies of plant health and productivity. Leaves were harvested from plants\ncultivated under two distinct conditions: low light (LL), representing\nunhealthy leaves with reduced photosynthesis. and high light (HL), representing\nhealthy leaves with highly active photosynthesis. Higher-order correlation data\nwere collected and analyzed using machine learning (ML) techniques,\nspecifically a Convolutional Neural Network (CNN), to classify the photon\nemitter states. This CNN efficiently identified unique patterns and created\ndistinct fingerprints for Nicotiana leaves grown under LL and HL, demonstrating\nsignificantly different quantum profiles between the two conditions. These\nquantum fingerprints serve as a foundation for a novel unified analysis of\nplant growth parameters associated with different photosynthetic states. By\nemploying CNN, the emitter profiles were able to reproducibly classify the\nleaves as healthy or unhealthy. This model achieved high probability values for\neach classification, confirming its accuracy and reliability. The findings of\nthis study pave the way for broader applications, including the application of\nadvanced quantum and machine learning technologies in plant health monitoring\nsystems.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21275v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21275v1",
+    "categories": [
+      "physics.bio-ph"
+    ]
+  },
+  {
+    "title": "BAnG: Bidirectional Anchored Generation for Conditional RNA Design",
+    "authors": [
+      "Roman Klypa",
+      "Alberto Bietti",
+      "Sergei Grudinin"
+    ],
+    "abstract": "Designing RNA molecules that interact with specific proteins is a critical\nchallenge in experimental and computational biology. Existing computational\napproaches require a substantial amount of experimentally determined RNA\nsequences for each specific protein or a detailed knowledge of RNA structure,\nrestricting their utility in practice. To address this limitation, we develop\nRNA-BAnG, a deep learning-based model designed to generate RNA sequences for\nprotein interactions without these requirements. Central to our approach is a\nnovel generative method, Bidirectional Anchored Generation (BAnG), which\nleverages the observation that protein-binding RNA sequences often contain\nfunctional binding motifs embedded within broader sequence contexts. We first\nvalidate our method on generic synthetic tasks involving similar localized\nmotifs to those appearing in RNAs, demonstrating its benefits over existing\ngenerative approaches. We then evaluate our model on biological sequences,\nshowing its effectiveness for conditional RNA sequence design given a binding\nprotein.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21274v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21274v1",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "q-bio.BM"
+    ]
+  },
+  {
+    "title": "Adaptive Keyframe Sampling for Long Video Understanding",
+    "authors": [
+      "Xi Tang",
+      "Jihao Qiu",
+      "Lingxi Xie",
+      "Yunjie Tian",
+      "Jianbin Jiao",
+      "Qixiang Ye"
+    ],
+    "abstract": "Multimodal large language models (MLLMs) have enabled open-world visual\nunderstanding by injecting visual input as extra tokens into large language\nmodels (LLMs) as contexts. However, when the visual input changes from a single\nimage to a long video, the above paradigm encounters difficulty because the\nvast amount of video tokens has significantly exceeded the maximal capacity of\nMLLMs. Therefore, existing video-based MLLMs are mostly established upon\nsampling a small portion of tokens from input data, which can cause key\ninformation to be lost and thus produce incorrect answers. This paper presents\na simple yet effective algorithm named Adaptive Keyframe Sampling (AKS). It\ninserts a plug-and-play module known as keyframe selection, which aims to\nmaximize the useful information with a fixed number of video tokens. We\nformulate keyframe selection as an optimization involving (1) the relevance\nbetween the keyframes and the prompt, and (2) the coverage of the keyframes\nover the video, and present an adaptive algorithm to approximate the best\nsolution. Experiments on two long video understanding benchmarks validate that\nAdaptive Keyframe Sampling improves video QA accuracy (beyond strong baselines)\nupon selecting informative keyframes. Our study reveals the importance of\ninformation pre-filtering in video-based MLLMs. Code is available at\nhttps://github.com/ncTimTang/AKS.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21271v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21271v1",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.LG"
+    ]
+  },
+  {
+    "title": "Dynamical Decoupling of Generalization and Overfitting in Large Two-Layer Networks",
+    "authors": [
+      "Andrea Montanari",
+      "Pierfrancesco Urbani"
+    ],
+    "abstract": "The inductive bias and generalization properties of large machine learning\nmodels are -- to a substantial extent -- a byproduct of the optimization\nalgorithm used for training. Among others, the scale of the random\ninitialization, the learning rate, and early stopping all have crucial impact\non the quality of the model learnt by stochastic gradient descent or related\nalgorithms. In order to understand these phenomena, we study the training\ndynamics of large two-layer neural networks. We use a well-established\ntechnique from non-equilibrium statistical physics (dynamical mean field\ntheory) to obtain an asymptotic high-dimensional characterization of this\ndynamics. This characterization applies to a Gaussian approximation of the\nhidden neurons non-linearity, and empirically captures well the behavior of\nactual neural network models.\n  Our analysis uncovers several interesting new phenomena in the training\ndynamics: $(i)$ The emergence of a slow time scale associated with the growth\nin Gaussian/Rademacher complexity; $(ii)$ As a consequence, algorithmic\ninductive bias towards small complexity, but only if the initialization has\nsmall enough complexity; $(iii)$ A separation of time scales between feature\nlearning and overfitting; $(iv)$ A non-monotone behavior of the test error and,\ncorrespondingly, a `feature unlearning' phase at large times.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21269v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21269v1",
+    "categories": [
+      "stat.ML",
+      "cond-mat.dis-nn",
+      "cs.LG"
+    ]
+  },
+  {
+    "title": "Stochastic dynamics at the back of a gene drive propagation wave",
+    "authors": [
+      "Léna Kläy",
+      "Léo Girardin",
+      "Florence Débarre",
+      "Vincent Calvez"
+    ],
+    "abstract": "Gene drive alleles bias their own inheritance to offspring. They can fix in a\nwild-type population in spite of a fitness cost, and even lead to the\neradication of the target population if the fitness cost is high. However, this\noutcome may be prevented or delayed if areas previously cleared by the drive\nare recolonised by wild-type individuals. Here, we investigate the conditions\nunder which these stochastic wild-type recolonisation events are likely and\nwhen they are unlikely to occur in one spatial dimension. More precisely, we\nexamine the conditions ensuring that the last individual carrying a wild-type\nallele is surrounded by a large enough number of drive homozygous individuals,\nresulting in a very low chance of wild-type recolonisation. To do so, we make a\ndeterministic approximation of the distribution of drive alleles within the\nwave, and we split the distribution of wild-type alleles into a deterministic\npart and a stochastic part. Our analytical and numerical results suggest that\nthe probability of wild-type recolonisation events increases with lower fitness\nof drive individuals, with smaller migration rate, and also with smaller local\ncarrying capacity. Numerical simulations show that these results extend to two\nspatial dimensions. We also demonstrate that, if a wild-type recolonisation\nevent were to occur, the probability of a following drive reinvasion event\ndecreases with smaller values of the intrinsic growth rate of the population.\nOverall, our study paves the way for further analysis of wild-type\nrecolonisation at the back of eradication traveling waves.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21268v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21268v1",
+    "categories": [
+      "q-bio.PE"
+    ]
+  },
+  {
+    "title": "ReaLJam: Real-Time Human-AI Music Jamming with Reinforcement Learning-Tuned Transformers",
+    "authors": [
+      "Alexander Scarlatos",
+      "Yusong Wu",
+      "Ian Simon",
+      "Adam Roberts",
+      "Tim Cooijmans",
+      "Natasha Jaques",
+      "Cassie Tarakajian",
+      "Cheng-Zhi Anna Huang"
+    ],
+    "abstract": "Recent advances in generative artificial intelligence (AI) have created\nmodels capable of high-quality musical content generation. However, little\nconsideration is given to how to use these models for real-time or cooperative\njamming musical applications because of crucial required features: low latency,\nthe ability to communicate planned actions, and the ability to adapt to user\ninput in real-time. To support these needs, we introduce ReaLJam, an interface\nand protocol for live musical jamming sessions between a human and a\nTransformer-based AI agent trained with reinforcement learning. We enable\nreal-time interactions using the concept of anticipation, where the agent\ncontinually predicts how the performance will unfold and visually conveys its\nplan to the user. We conduct a user study where experienced musicians jam in\nreal-time with the agent through ReaLJam. Our results demonstrate that ReaLJam\nenables enjoyable and musically interesting sessions, and we uncover important\ntakeaways for future work.",
+    "pdf_url": "http://arxiv.org/pdf/2502.21267v1",
+    "published": "2025-02-28",
+    "source": "arxiv",
+    "id": "2502.21267v1",
+    "categories": [
+      "cs.HC",
+      "cs.AI"
+    ]
+  },
+  {
+    "title": "DamoFD: Digging into Backbone Design on Face Detection",
+    "authors": [
+      "Yang Liu",
+      "Jiankang Deng",
+      "Fei Wang",
+      "Lei Shang",
+      "Xuansong Xie",
+      "Baigui Sun"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=4ZjBAlcuBO",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "4ZjBAlcuBO",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "FunkNN: Neural Interpolation for Functional Generation",
+    "authors": [
+      "AmirEhsan Khorashadizadeh",
+      "Anadi Chaman",
+      "Valentin Debarnot",
+      "Ivan Dokmanic"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=S7jP4F54hEi",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "S7jP4F54hEi",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "When Source-Free Domain Adaptation Meets Learning with Noisy Labels",
+    "authors": [
+      "Li Yi",
+      "Gezheng Xu",
+      "Pengcheng Xu",
+      "Jiaqi Li",
+      "Ruizhi Pu",
+      "Charles Ling",
+      "A. Ian McLeod",
+      "Boyu Wang"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=A19iY4k5mY",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "A19iY4k5mY",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "Continual Pre-training of Language Models",
+    "authors": [
+      "Zixuan Ke",
+      "Yijia Shao",
+      "Haowei Lin",
+      "Tatsuya Konishi",
+      "Gyuhak Kim",
+      "Bing Liu"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=RiEnmzmK9_g",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "RiEnmzmK9_g",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "MaskFusion: Feature Augmentation for Click-Through Rate Prediction via Input-adaptive Mask Fusion",
+    "authors": [
+      "Chao Liao",
+      "Jianchao Tan",
+      "Jiyuan Jia",
+      "Yi Guo",
+      "Chengru Song"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=muaSfzX9odO",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "muaSfzX9odO",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "Sparse Random Networks for Communication-Efficient Federated Learning",
+    "authors": [
+      "Berivan Isik",
+      "Francesco Pase",
+      "Deniz Gündüz",
+      "Tsachy Weissman",
+      "Michele Zorzi"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=j4ViefKpyA",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "j4ViefKpyA",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "That Label's got Style: Handling Label Style Bias for Uncertain Image Segmentation",
+    "authors": [
+      "Kilian Zepf",
+      "Eike Petersen",
+      "Jes Frellsen",
+      "Aasa Feragen"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=5libS0tuRA",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "5libS0tuRA",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "Unicom: Universal and Compact Representation Learning for Image Retrieval",
+    "authors": [
+      "Xiang An",
+      "Jiankang Deng",
+      "Kaicheng Yang",
+      "Jaiwei Li",
+      "Ziyong Feng",
+      "Jia Guo",
+      "Jing Yang",
+      "Tongliang Liu"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=uECAYvIQOh",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "uECAYvIQOh",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "Uni-Mol: A Universal 3D Molecular Representation Learning Framework",
+    "authors": [
+      "Gengmo Zhou",
+      "Zhifeng Gao",
+      "Qiankun Ding",
+      "Hang Zheng",
+      "Hongteng Xu",
+      "Zhewei Wei",
+      "Linfeng Zhang",
+      "Guolin Ke"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=xLK_-SLxMgw",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "xLK_-SLxMgw",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "Spiking Convolutional Neural Networks for Text Classification",
+    "authors": [
+      "Changze Lv",
+      "Jianhan Xu",
+      "Xiaoqing Zheng"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=8VC_NHYzuM",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "8VC_NHYzuM",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "Martingale Posterior Neural Processes",
+    "authors": [
+      "Hyungi Lee",
+      "Eunggu Yun",
+      "Giung Nam",
+      "Edwin Fong",
+      "Juho Lee"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=pFCumdWKhZI",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "pFCumdWKhZI",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "Imbalanced Semi-supervised Learning with Bias Adaptive Classifier",
+    "authors": [
+      "Renzhen Wang",
+      "Xixi Jia",
+      "Quanziang Wang",
+      "Yichen Wu",
+      "Deyu Meng"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=KKTUgEVRTvU",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "KKTUgEVRTvU",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "Universal Few-shot Learning of Dense Prediction Tasks with Visual Token Matching",
+    "authors": [
+      "Donggyun Kim",
+      "Jinwoo Kim",
+      "Seongwoong Cho",
+      "Chong Luo",
+      "Seunghoon Hong"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=-FoOEXAUHD",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "-FoOEXAUHD",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "EA-HAS-Bench: Energy-aware Hyperparameter and Architecture Search Benchmark",
+    "authors": [
+      "Shuguang Dou",
+      "Xinyang Jiang",
+      "Cairong Zhao",
+      "Dongsheng Li"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=7MZVpPRAbh",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "7MZVpPRAbh",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "ILA-DA: Improving Transferability of Intermediate Level Attack with Data Augmentation",
+    "authors": [
+      "Chiu Wai Yan",
+      "Tsz-Him Cheung",
+      "Dit-Yan Yeung"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=_eq5KuLCyt",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "_eq5KuLCyt",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "Ollivier-Ricci Curvature for Hypergraphs: A Unified Framework",
+    "authors": [
+      "Corinna Coupette",
+      "Sebastian Dalleiger",
+      "Bastian Rieck"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=IPTvF82IUSd",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "IPTvF82IUSd",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "Computational Language Acquisition with Theory of Mind",
+    "authors": [
+      "Andy Liu",
+      "Hao Zhu",
+      "Emmy Liu",
+      "Yonatan Bisk",
+      "Graham Neubig"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=22KRCpsub7D",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "22KRCpsub7D",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "ImageNet-X: Understanding Model Mistakes with Factor of Variation Annotations",
+    "authors": [
+      "Badr Youbi Idrissi",
+      "Diane Bouchacourt",
+      "Randall Balestriero",
+      "Ivan Evtimov",
+      "Caner Hazirbas",
+      "Nicolas Ballas",
+      "Pascal Vincent",
+      "Michal Drozdzal",
+      "David Lopez-Paz",
+      "Mark Ibrahim"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=sHN9cYMR3kp",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "sHN9cYMR3kp",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "Autoencoders as Cross-Modal Teachers: Can Pretrained 2D Image Transformers Help 3D Representation Learning?",
+    "authors": [
+      "Runpei Dong",
+      "Zekun Qi",
+      "Linfeng Zhang",
+      "Junbo Zhang",
+      "Jianjian Sun",
+      "Zheng Ge",
+      "Li Yi",
+      "Kaisheng Ma"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=JVZiQVfejo",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "JVZiQVfejo",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "Progressive Voronoi Diagram Subdivision Enables Accurate Data-free Class-Incremental Learning",
+    "authors": [
+      "Chunwei Ma",
+      "Zhanghexuan Ji",
+      "Ziyun Huang",
+      "Yan Shen",
+      "Mingchen Gao",
+      "Jinhui Xu"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=zwd0ompoeRo",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "zwd0ompoeRo",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "Regression with Label Differential Privacy",
+    "authors": [
+      "Badih Ghazi",
+      "Pritish Kamath",
+      "Ravi Kumar",
+      "Ethan Leeman",
+      "Pasin Manurangsi",
+      "Avinash Varadarajan",
+      "Chiyuan Zhang"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=qjOCAGVBSs",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "qjOCAGVBSs",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "Progressive Prompts: Continual Learning for Language Models",
+    "authors": [
+      "Anastasia Razdaibiedina",
+      "Yuning Mao",
+      "Rui Hou",
+      "Madian Khabsa",
+      "Mike Lewis",
+      "Amjad Almahairi"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=gC6RE4Lgv0",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "gC6RE4Lgv0",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "Confidential-PROFITT: Confidential PROof of FaIr Training of Trees",
+    "authors": [
+      "Ali Shahin Shamsabadi",
+      "Sierra Calanda Wyllie",
+      "Nicholas Franzese",
+      "Natalie Dullerud",
+      "Sébastien Gambs",
+      "Nicolas Papernot",
+      "Xiao Wang",
+      "Adrian Weller"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=q_lYGahGQ6W",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "q_lYGahGQ6W",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "Particle-based Variational Inference with Preconditioned Functional Gradient Flow",
+    "authors": [
+      "Hanze Dong",
+      "Xi Wang",
+      "Yong Lin",
+      "Tong Zhang"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=BTIe7NBOku",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "BTIe7NBOku",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "Tailoring Language Generation Models under Total Variation Distance",
+    "authors": [
+      "Haozhe Ji",
+      "Pei Ke",
+      "Zhipeng Hu",
+      "Rongsheng Zhang",
+      "Minlie Huang"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=rjK2p2DAMy",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "rjK2p2DAMy",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "Long-Tailed Partial Label Learning via Dynamic Rebalancing",
+    "authors": [
+      "Feng Hong",
+      "Jiangchao Yao",
+      "Zhihan Zhou",
+      "Ya Zhang",
+      "Yanfeng Wang"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=33R9Da7B9k",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "33R9Da7B9k",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "Soft Neighbors are Positive Supporters in Contrastive Visual Representation Learning",
+    "authors": [
+      "Chongjian Ge",
+      "Jiangliu Wang",
+      "Zhan Tong",
+      "Shoufa Chen",
+      "Yibing Song",
+      "Ping Luo"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=0lAzNK-7Eeo",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "0lAzNK-7Eeo",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "Can CNNs Be More Robust Than Transformers?",
+    "authors": [
+      "Zeyu Wang",
+      "Yutong Bai",
+      "Yuyin Zhou",
+      "Cihang Xie"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=RTUgpjALw8F",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "RTUgpjALw8F",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "CodeGen: An Open Large Language Model for Code with Multi-Turn Program Synthesis",
+    "authors": [
+      "Erik Nijkamp",
+      "Bo Pang",
+      "Hiroaki Hayashi",
+      "Lifu Tu",
+      "Huan Wang",
+      "Yingbo Zhou",
+      "Silvio Savarese",
+      "Caiming Xiong"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=6TIhIWb6j8",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "6TIhIWb6j8",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "DropIT: Dropping Intermediate Tensors for Memory-Efficient DNN Training",
+    "authors": [
+      "Joya Chen",
+      "Kai Xu",
+      "Yuhui Wang",
+      "Yifei Cheng",
+      "Angela Yao"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=C2MBMaaNWQ",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "C2MBMaaNWQ",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "Mole-BERT: Rethinking Pre-training Graph Neural Networks for Molecules",
+    "authors": [
+      "Jun Xia",
+      "Chengshuai Zhao",
+      "Bozhen Hu",
+      "Zhangyang Gao",
+      "Cheng Tan",
+      "Yue Liu",
+      "Siyuan Li",
+      "Stan Z. Li"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=UKVT8y88g3r",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "UKVT8y88g3r",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "Progressively Compressed Auto-Encoder for Self-supervised Representation Learning",
+    "authors": [
+      "Jin Li",
+      "Yaoming Wang",
+      "Xiaopeng Zhang",
+      "Yabo Chen",
+      "Dongsheng Jiang",
+      "Wenrui Dai",
+      "Chenglin Li",
+      "Hongkai Xiong",
+      "Qi Tian"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=Rhs560dA1R0",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "Rhs560dA1R0",
+    "venue": "ICLR 2023"
+  },
+  {
+    "title": "One-Pixel Shortcut: On the Learning Preference of Deep Neural Networks",
+    "authors": [
+      "Shutong Wu",
+      "Sizhe Chen",
+      "Cihang Xie",
+      "Xiaolin Huang"
+    ],
+    "abstract": "",
+    "pdf_url": "https://openreview.net/pdf?id=TcOCW5yCVR",
+    "published": 1672531200000,
+    "source": "openreview",
+    "id": "TcOCW5yCVR",
+    "venue": "ICLR 2023"
+  }
+]

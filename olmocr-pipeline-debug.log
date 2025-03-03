@@ -1,0 +1,1262 @@
+2025-03-03 18:23:38,115 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_IPTvF82IUSd.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,124 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_rjK2p2DAMy.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,125 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_BTIe7NBOku.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,126 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_Rhs560dA1R0.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,136 - olmocr.pipeline - INFO - Got 25 pages to do for ml_corpus/pdfs/arxiv_2502.21284v1.pdf in worker 0
+2025-03-03 18:23:38,147 - olmocr.pipeline - INFO - Got 18 pages to do for ml_corpus/pdfs/arxiv_2502.21319v1.pdf in worker 0
+2025-03-03 18:23:38,154 - olmocr.pipeline - INFO - Got 11 pages to do for ml_corpus/pdfs/arxiv_2502.21313v1.pdf in worker 0
+2025-03-03 18:23:38,158 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_4ZjBAlcuBO.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,159 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_22KRCpsub7D.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,163 - olmocr.pipeline - INFO - Got 9 pages to do for ml_corpus/pdfs/arxiv_2502.21267v1.pdf in worker 0
+2025-03-03 18:23:38,165 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_TcOCW5yCVR.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,170 - olmocr.pipeline - INFO - Got 19 pages to do for ml_corpus/pdfs/arxiv_2502.21315v1.pdf in worker 0
+2025-03-03 18:23:38,173 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_33R9Da7B9k.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,174 - olmocr.pipeline - INFO - Got 7 pages to do for ml_corpus/pdfs/arxiv_2502.21300v1.pdf in worker 0
+2025-03-03 18:23:38,176 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_qjOCAGVBSs.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,190 - olmocr.pipeline - INFO - Got 31 pages to do for ml_corpus/pdfs/arxiv_2502.21321v1.pdf in worker 0
+2025-03-03 18:23:38,205 - olmocr.pipeline - INFO - Got 27 pages to do for ml_corpus/pdfs/arxiv_2502.21290v1.pdf in worker 0
+2025-03-03 18:23:38,210 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_RiEnmzmK9_g.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,211 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_muaSfzX9odO.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,220 - olmocr.pipeline - INFO - Got 40 pages to do for ml_corpus/pdfs/arxiv_2502.21277v1.pdf in worker 0
+2025-03-03 18:23:38,227 - olmocr.pipeline - INFO - Got 8 pages to do for ml_corpus/pdfs/arxiv_2502.21303v1.pdf in worker 0
+2025-03-03 18:23:38,231 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_-FoOEXAUHD.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,233 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_UKVT8y88g3r.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,234 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_xLK_-SLxMgw.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,238 - olmocr.pipeline - INFO - Got 18 pages to do for ml_corpus/pdfs/arxiv_2502.21282v1.pdf in worker 0
+2025-03-03 18:23:38,241 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_S7jP4F54hEi.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,242 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_C2MBMaaNWQ.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,248 - olmocr.pipeline - INFO - Got 12 pages to do for ml_corpus/pdfs/arxiv_2502.21271v1.pdf in worker 0
+2025-03-03 18:23:38,252 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_5libS0tuRA.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,254 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview__eq5KuLCyt.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,255 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_uECAYvIQOh.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,257 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_6TIhIWb6j8.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,265 - olmocr.pipeline - INFO - Got 23 pages to do for ml_corpus/pdfs/arxiv_2502.21297v1.pdf in worker 0
+2025-03-03 18:23:38,274 - olmocr.pipeline - INFO - Got 6 pages to do for ml_corpus/pdfs/arxiv_2502.21316v1.pdf in worker 0
+2025-03-03 18:23:38,288 - olmocr.pipeline - INFO - Got 21 pages to do for ml_corpus/pdfs/arxiv_2502.21309v1.pdf in worker 0
+2025-03-03 18:23:38,306 - olmocr.pipeline - INFO - Got 30 pages to do for ml_corpus/pdfs/arxiv_2502.21268v1.pdf in worker 0
+2025-03-03 18:23:38,329 - olmocr.pipeline - INFO - Got 9 pages to do for ml_corpus/pdfs/arxiv_2502.21280v1.pdf in worker 0
+2025-03-03 18:23:38,346 - olmocr.pipeline - INFO - Got 25 pages to do for ml_corpus/pdfs/arxiv_2502.21306v1.pdf in worker 0
+2025-03-03 18:23:38,351 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_7MZVpPRAbh.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,352 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_zwd0ompoeRo.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,354 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_pFCumdWKhZI.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,355 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_gC6RE4Lgv0.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,356 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_KKTUgEVRTvU.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,357 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_A19iY4k5mY.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,387 - olmocr.pipeline - INFO - Got 18 pages to do for ml_corpus/pdfs/arxiv_2502.21291v1.pdf in worker 0
+2025-03-03 18:23:38,409 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_j4ViefKpyA.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,410 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_sHN9cYMR3kp.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,412 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_8VC_NHYzuM.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,413 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_RTUgpjALw8F.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,418 - olmocr.pipeline - INFO - Got 10 pages to do for ml_corpus/pdfs/arxiv_2502.21311v1.pdf in worker 0
+2025-03-03 18:23:38,421 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_0lAzNK-7Eeo.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,422 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_JVZiQVfejo.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,423 - olmocr.pipeline - ERROR - Could not count number of pages for ml_corpus/pdfs/openreview_q_lYGahGQ6W.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 18:23:38,429 - olmocr.pipeline - INFO - Got 19 pages to do for ml_corpus/pdfs/arxiv_2502.21274v1.pdf in worker 0
+2025-03-03 18:23:38,439 - olmocr.pipeline - INFO - Got 13 pages to do for ml_corpus/pdfs/arxiv_2502.21283v1.pdf in worker 0
+2025-03-03 18:23:38,472 - olmocr.pipeline - INFO - Got 21 pages to do for ml_corpus/pdfs/arxiv_2502.21318v1.pdf in worker 0
+2025-03-03 18:23:38,503 - olmocr.pipeline - INFO - Got 28 pages to do for ml_corpus/pdfs/arxiv_2502.21293v1.pdf in worker 0
+2025-03-03 18:23:38,524 - olmocr.pipeline - INFO - Got 22 pages to do for ml_corpus/pdfs/arxiv_2502.21296v1.pdf in worker 0
+2025-03-03 18:23:38,547 - olmocr.pipeline - INFO - Got 89 pages to do for ml_corpus/pdfs/arxiv_2502.21269v1.pdf in worker 0
+2025-03-03 18:23:38,562 - olmocr.pipeline - INFO - Got 11 pages to do for ml_corpus/pdfs/arxiv_2502.21289v1.pdf in worker 0
+2025-03-03 18:23:38,576 - olmocr.pipeline - INFO - Got 27 pages to do for ml_corpus/pdfs/arxiv_2502.21317v1.pdf in worker 0
+2025-03-03 18:23:38,594 - olmocr.pipeline - INFO - Got 13 pages to do for ml_corpus/pdfs/arxiv_2502.21275v1.pdf in worker 0
+2025-03-03 18:23:38,613 - olmocr.pipeline - INFO - Got 33 pages to do for ml_corpus/pdfs/arxiv_2502.21278v1.pdf in worker 0
+2025-03-03 18:23:38,638 - olmocr.pipeline - INFO - Got 18 pages to do for ml_corpus/pdfs/arxiv_2502.21314v1.pdf in worker 0
+2025-03-03 18:23:38,670 - olmocr.pipeline - INFO - Got 28 pages to do for ml_corpus/pdfs/arxiv_2502.21286v1.pdf in worker 0
+2025-03-03 18:23:38,696 - olmocr.pipeline - INFO - Got 10 pages to do for ml_corpus/pdfs/arxiv_2502.21292v1.pdf in worker 0
+2025-03-03 19:38:04,159 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_IPTvF82IUSd.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,162 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_rjK2p2DAMy.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,163 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_BTIe7NBOku.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,165 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_Rhs560dA1R0.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,172 - olmocr.pipeline - INFO - Got 18 pages to do for ../../data/pdfs/arxiv_2502.21319v1.pdf in worker 0
+2025-03-03 19:38:04,182 - olmocr.pipeline - INFO - Got 11 pages to do for ../../data/pdfs/arxiv_2502.21313v1.pdf in worker 0
+2025-03-03 19:38:04,191 - olmocr.pipeline - INFO - Got 25 pages to do for ../../data/pdfs/arxiv_2502.21284v1.pdf in worker 0
+2025-03-03 19:38:04,198 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_4ZjBAlcuBO.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,199 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_22KRCpsub7D.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,203 - olmocr.pipeline - INFO - Got 9 pages to do for ../../data/pdfs/arxiv_2502.21267v1.pdf in worker 0
+2025-03-03 19:38:04,206 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_TcOCW5yCVR.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,211 - olmocr.pipeline - INFO - Got 19 pages to do for ../../data/pdfs/arxiv_2502.21315v1.pdf in worker 0
+2025-03-03 19:38:04,214 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_33R9Da7B9k.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,215 - olmocr.pipeline - INFO - Got 7 pages to do for ../../data/pdfs/arxiv_2502.21300v1.pdf in worker 0
+2025-03-03 19:38:04,228 - olmocr.pipeline - INFO - Got 31 pages to do for ../../data/pdfs/arxiv_2502.21321v1.pdf in worker 0
+2025-03-03 19:38:04,241 - olmocr.pipeline - INFO - Got 27 pages to do for ../../data/pdfs/arxiv_2502.21290v1.pdf in worker 0
+2025-03-03 19:38:04,245 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_qjOCAGVBSs.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,246 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_RiEnmzmK9_g.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,250 - olmocr.pipeline - INFO - Got 8 pages to do for ../../data/pdfs/arxiv_2502.21303v1.pdf in worker 0
+2025-03-03 19:38:04,265 - olmocr.pipeline - INFO - Got 40 pages to do for ../../data/pdfs/arxiv_2502.21277v1.pdf in worker 0
+2025-03-03 19:38:04,269 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_muaSfzX9odO.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,270 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_-FoOEXAUHD.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,271 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_xLK_-SLxMgw.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,275 - olmocr.pipeline - INFO - Got 18 pages to do for ../../data/pdfs/arxiv_2502.21282v1.pdf in worker 0
+2025-03-03 19:38:04,278 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_UKVT8y88g3r.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,283 - olmocr.pipeline - INFO - Got 12 pages to do for ../../data/pdfs/arxiv_2502.21271v1.pdf in worker 0
+2025-03-03 19:38:04,289 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_S7jP4F54hEi.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,291 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_5libS0tuRA.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,292 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_C2MBMaaNWQ.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,293 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview__eq5KuLCyt.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,294 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_6TIhIWb6j8.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,295 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_uECAYvIQOh.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,303 - olmocr.pipeline - INFO - Got 23 pages to do for ../../data/pdfs/arxiv_2502.21297v1.pdf in worker 0
+2025-03-03 19:38:04,322 - olmocr.pipeline - INFO - Got 30 pages to do for ../../data/pdfs/arxiv_2502.21268v1.pdf in worker 0
+2025-03-03 19:38:04,338 - olmocr.pipeline - INFO - Got 21 pages to do for ../../data/pdfs/arxiv_2502.21309v1.pdf in worker 0
+2025-03-03 19:38:04,348 - olmocr.pipeline - INFO - Got 6 pages to do for ../../data/pdfs/arxiv_2502.21316v1.pdf in worker 0
+2025-03-03 19:38:04,362 - olmocr.pipeline - INFO - Got 9 pages to do for ../../data/pdfs/arxiv_2502.21280v1.pdf in worker 0
+2025-03-03 19:38:04,381 - olmocr.pipeline - INFO - Got 25 pages to do for ../../data/pdfs/arxiv_2502.21306v1.pdf in worker 0
+2025-03-03 19:38:04,415 - olmocr.pipeline - INFO - Got 18 pages to do for ../../data/pdfs/arxiv_2502.21291v1.pdf in worker 0
+2025-03-03 19:38:04,436 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_7MZVpPRAbh.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,438 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_pFCumdWKhZI.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,439 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_zwd0ompoeRo.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,441 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_gC6RE4Lgv0.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,442 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_A19iY4k5mY.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,443 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_sHN9cYMR3kp.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,444 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_j4ViefKpyA.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,445 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_KKTUgEVRTvU.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,481 - olmocr.pipeline - INFO - Got 21 pages to do for ../../data/pdfs/arxiv_2502.21318v1.pdf in worker 0
+2025-03-03 19:38:04,506 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_8VC_NHYzuM.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,507 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_RTUgpjALw8F.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,514 - olmocr.pipeline - INFO - Got 10 pages to do for ../../data/pdfs/arxiv_2502.21311v1.pdf in worker 0
+2025-03-03 19:38:04,518 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_JVZiQVfejo.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,519 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_0lAzNK-7Eeo.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,520 - olmocr.pipeline - ERROR - Could not count number of pages for ../../data/pdfs/openreview_q_lYGahGQ6W.pdf, aborting document
+Traceback (most recent call last):
+  File "/ML-expert/scripts/create_dataset/olmocr/pipeline.py", line 326, in process_pdf
+    reader = PdfReader(tf.name)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 135, in __init__
+    self._initialize_stream(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 156, in _initialize_stream
+    self.read(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 578, in read
+    self._find_eof_marker(stream)
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_reader.py", line 686, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ML-expert/.venv/lib/python3.11/site-packages/pypdf/_utils.py", line 294, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+2025-03-03 19:38:04,526 - olmocr.pipeline - INFO - Got 19 pages to do for ../../data/pdfs/arxiv_2502.21274v1.pdf in worker 0
+2025-03-03 19:38:04,540 - olmocr.pipeline - INFO - Got 13 pages to do for ../../data/pdfs/arxiv_2502.21283v1.pdf in worker 0
+2025-03-03 19:38:04,550 - olmocr.pipeline - INFO - Got 28 pages to do for ../../data/pdfs/arxiv_2502.21293v1.pdf in worker 0
+2025-03-03 19:38:04,565 - olmocr.pipeline - INFO - Got 27 pages to do for ../../data/pdfs/arxiv_2502.21317v1.pdf in worker 0
+2025-03-03 19:38:04,581 - olmocr.pipeline - INFO - Got 13 pages to do for ../../data/pdfs/arxiv_2502.21275v1.pdf in worker 0
+2025-03-03 19:38:04,602 - olmocr.pipeline - INFO - Got 89 pages to do for ../../data/pdfs/arxiv_2502.21269v1.pdf in worker 0
+2025-03-03 19:38:04,617 - olmocr.pipeline - INFO - Got 22 pages to do for ../../data/pdfs/arxiv_2502.21296v1.pdf in worker 0
+2025-03-03 19:38:04,627 - olmocr.pipeline - INFO - Got 11 pages to do for ../../data/pdfs/arxiv_2502.21289v1.pdf in worker 0
+2025-03-03 19:38:04,642 - olmocr.pipeline - INFO - Got 33 pages to do for ../../data/pdfs/arxiv_2502.21278v1.pdf in worker 0
+2025-03-03 19:38:04,661 - olmocr.pipeline - INFO - Got 28 pages to do for ../../data/pdfs/arxiv_2502.21286v1.pdf in worker 0
+2025-03-03 19:38:04,684 - olmocr.pipeline - INFO - Got 18 pages to do for ../../data/pdfs/arxiv_2502.21314v1.pdf in worker 0
+2025-03-03 19:38:04,723 - olmocr.pipeline - INFO - Got 10 pages to do for ../../data/pdfs/arxiv_2502.21292v1.pdf in worker 0
+2025-03-03 20:11:03,997 - olmocr.pipeline - INFO - Got 18 pages to do for data/pdfs/arxiv_2502.21319v1.pdf in worker 0
+2025-03-03 20:11:04,002 - olmocr.pipeline - INFO - Got 11 pages to do for data/pdfs/arxiv_2502.21313v1.pdf in worker 0
+2025-03-03 20:11:04,011 - olmocr.pipeline - INFO - Got 25 pages to do for data/pdfs/arxiv_2502.21284v1.pdf in worker 0
+2025-03-03 20:11:04,014 - olmocr.pipeline - INFO - Got 9 pages to do for data/pdfs/arxiv_2502.21267v1.pdf in worker 0
+2025-03-03 20:11:04,018 - olmocr.pipeline - INFO - Got 19 pages to do for data/pdfs/arxiv_2502.21315v1.pdf in worker 0
+2025-03-03 20:11:05,108 - olmocr.pipeline - INFO - Got 9 pages to do for data/pdfs/arxiv_2502.21280v1.pdf in worker 0
+2025-03-03 20:11:05,127 - olmocr.pipeline - INFO - Got 31 pages to do for data/pdfs/arxiv_2502.21321v1.pdf in worker 0
+2025-03-03 20:11:05,133 - olmocr.pipeline - INFO - Got 8 pages to do for data/pdfs/arxiv_2502.21303v1.pdf in worker 0
+2025-03-03 20:11:05,135 - olmocr.pipeline - INFO - Got 7 pages to do for data/pdfs/arxiv_2502.21300v1.pdf in worker 0
+2025-03-03 20:11:05,150 - olmocr.pipeline - INFO - Got 30 pages to do for data/pdfs/arxiv_2502.21268v1.pdf in worker 0
+2025-03-03 20:11:05,162 - olmocr.pipeline - INFO - Got 40 pages to do for data/pdfs/arxiv_2502.21277v1.pdf in worker 0
+2025-03-03 20:11:05,169 - olmocr.pipeline - INFO - Got 27 pages to do for data/pdfs/arxiv_2502.21290v1.pdf in worker 0
+2025-03-03 20:11:06,237 - olmocr.pipeline - INFO - Got 23 pages to do for data/pdfs/arxiv_2502.21297v1.pdf in worker 0
+2025-03-03 20:11:06,244 - olmocr.pipeline - INFO - Got 12 pages to do for data/pdfs/arxiv_2502.21271v1.pdf in worker 0
+2025-03-03 20:11:06,280 - olmocr.pipeline - INFO - Got 21 pages to do for data/pdfs/arxiv_2502.21318v1.pdf in worker 0
+2025-03-03 20:11:06,290 - olmocr.pipeline - INFO - Got 18 pages to do for data/pdfs/arxiv_2502.21282v1.pdf in worker 0
+2025-03-03 20:11:06,325 - olmocr.pipeline - INFO - Got 18 pages to do for data/pdfs/arxiv_2502.21291v1.pdf in worker 0
+2025-03-03 20:11:07,362 - olmocr.pipeline - INFO - Got 21 pages to do for data/pdfs/arxiv_2502.21309v1.pdf in worker 0
+2025-03-03 20:11:07,368 - olmocr.pipeline - INFO - Got 6 pages to do for data/pdfs/arxiv_2502.21316v1.pdf in worker 0
+2025-03-03 20:11:07,381 - olmocr.pipeline - INFO - Got 25 pages to do for data/pdfs/arxiv_2502.21306v1.pdf in worker 0
+2025-03-03 20:11:08,423 - olmocr.pipeline - INFO - Got 18 pages to do for data/pdfs/arxiv_2502.21314v1.pdf in worker 0
+2025-03-03 20:11:08,429 - olmocr.pipeline - INFO - Got 10 pages to do for data/pdfs/arxiv_2502.21311v1.pdf in worker 0
+2025-03-03 20:11:09,496 - olmocr.pipeline - INFO - Got 28 pages to do for data/pdfs/arxiv_2502.21286v1.pdf in worker 0
+2025-03-03 20:11:09,516 - olmocr.pipeline - INFO - Got 89 pages to do for data/pdfs/arxiv_2502.21269v1.pdf in worker 0
+2025-03-03 20:11:09,524 - olmocr.pipeline - INFO - Got 13 pages to do for data/pdfs/arxiv_2502.21275v1.pdf in worker 0
+2025-03-03 20:11:09,536 - olmocr.pipeline - INFO - Got 33 pages to do for data/pdfs/arxiv_2502.21278v1.pdf in worker 0
+2025-03-03 20:11:09,544 - olmocr.pipeline - INFO - Got 28 pages to do for data/pdfs/arxiv_2502.21293v1.pdf in worker 0
+2025-03-03 20:11:09,550 - olmocr.pipeline - INFO - Got 11 pages to do for data/pdfs/arxiv_2502.21289v1.pdf in worker 0
+2025-03-03 20:11:10,609 - olmocr.pipeline - INFO - Got 19 pages to do for data/pdfs/arxiv_2502.21274v1.pdf in worker 0
+2025-03-03 20:11:10,614 - olmocr.pipeline - INFO - Got 13 pages to do for data/pdfs/arxiv_2502.21283v1.pdf in worker 0
+2025-03-03 20:11:10,642 - olmocr.pipeline - INFO - Got 10 pages to do for data/pdfs/arxiv_2502.21292v1.pdf in worker 0
+2025-03-03 20:11:10,659 - olmocr.pipeline - INFO - Got 27 pages to do for data/pdfs/arxiv_2502.21317v1.pdf in worker 0
+2025-03-03 20:11:10,666 - olmocr.pipeline - INFO - Got 22 pages to do for data/pdfs/arxiv_2502.21296v1.pdf in worker 0
+2025-03-03 20:14:54,963 - olmocr.pipeline - WARNING - Attempt 1: All connection attempts failed
+2025-03-03 20:14:55,988 - olmocr.pipeline - WARNING - Attempt 2: All connection attempts failed
+2025-03-03 20:14:57,013 - olmocr.pipeline - WARNING - Attempt 3: All connection attempts failed
+2025-03-03 20:14:58,033 - olmocr.pipeline - WARNING - Attempt 4: All connection attempts failed
+2025-03-03 20:14:59,055 - olmocr.pipeline - WARNING - Attempt 5: All connection attempts failed
+2025-03-03 20:15:00,080 - olmocr.pipeline - WARNING - Attempt 6: All connection attempts failed
+2025-03-03 20:15:01,108 - olmocr.pipeline - WARNING - Attempt 7: All connection attempts failed
+2025-03-03 20:15:02,135 - olmocr.pipeline - WARNING - Attempt 8: All connection attempts failed
+2025-03-03 20:15:03,161 - olmocr.pipeline - WARNING - Attempt 9: All connection attempts failed
+2025-03-03 20:15:04,187 - olmocr.pipeline - WARNING - Attempt 10: All connection attempts failed
+2025-03-03 20:15:05,213 - olmocr.pipeline - WARNING - Attempt 11: All connection attempts failed
+2025-03-03 20:15:06,238 - olmocr.pipeline - WARNING - Attempt 12: All connection attempts failed
+2025-03-03 20:15:07,265 - olmocr.pipeline - WARNING - Attempt 13: All connection attempts failed
+2025-03-03 20:15:08,291 - olmocr.pipeline - WARNING - Attempt 14: All connection attempts failed
+2025-03-03 20:15:09,316 - olmocr.pipeline - WARNING - Attempt 15: All connection attempts failed
+2025-03-03 20:15:10,343 - olmocr.pipeline - WARNING - Attempt 16: All connection attempts failed
+2025-03-03 20:15:11,370 - olmocr.pipeline - WARNING - Attempt 17: All connection attempts failed
+2025-03-03 20:15:12,394 - olmocr.pipeline - WARNING - Attempt 18: All connection attempts failed
+2025-03-03 20:15:13,415 - olmocr.pipeline - WARNING - Attempt 19: All connection attempts failed
+2025-03-03 20:15:14,437 - olmocr.pipeline - WARNING - Attempt 20: All connection attempts failed
+2025-03-03 20:15:15,461 - olmocr.pipeline - WARNING - Attempt 21: All connection attempts failed
+2025-03-03 20:15:16,485 - olmocr.pipeline - WARNING - Attempt 22: All connection attempts failed
+2025-03-03 20:15:17,505 - olmocr.pipeline - WARNING - Attempt 23: All connection attempts failed
+2025-03-03 20:15:18,527 - olmocr.pipeline - WARNING - Attempt 24: All connection attempts failed
+2025-03-03 20:15:19,547 - olmocr.pipeline - WARNING - Attempt 25: All connection attempts failed
+2025-03-03 20:15:20,570 - olmocr.pipeline - WARNING - Attempt 26: All connection attempts failed
+2025-03-03 20:15:21,591 - olmocr.pipeline - WARNING - Attempt 27: All connection attempts failed
+2025-03-03 20:15:22,617 - olmocr.pipeline - WARNING - Attempt 28: All connection attempts failed
+2025-03-03 20:15:23,646 - olmocr.pipeline - WARNING - Attempt 29: All connection attempts failed
+2025-03-03 20:15:24,668 - olmocr.pipeline - WARNING - Attempt 30: All connection attempts failed
+2025-03-03 20:15:25,694 - olmocr.pipeline - WARNING - Attempt 31: All connection attempts failed
+2025-03-03 20:15:26,716 - olmocr.pipeline - WARNING - Attempt 32: All connection attempts failed
+2025-03-03 20:15:27,739 - olmocr.pipeline - WARNING - Attempt 33: All connection attempts failed
+2025-03-03 20:15:28,761 - olmocr.pipeline - WARNING - Attempt 34: All connection attempts failed
+2025-03-03 20:15:29,788 - olmocr.pipeline - WARNING - Attempt 35: All connection attempts failed
+2025-03-03 20:15:30,809 - olmocr.pipeline - WARNING - Attempt 36: All connection attempts failed
+2025-03-03 20:15:31,835 - olmocr.pipeline - WARNING - Attempt 37: All connection attempts failed
+2025-03-03 20:15:32,864 - olmocr.pipeline - WARNING - Attempt 38: All connection attempts failed
+2025-03-03 20:15:33,888 - olmocr.pipeline - WARNING - Attempt 39: All connection attempts failed
+2025-03-03 20:15:34,911 - olmocr.pipeline - WARNING - Attempt 40: All connection attempts failed
+2025-03-03 20:15:35,933 - olmocr.pipeline - WARNING - Attempt 41: All connection attempts failed

@@ -1,0 +1,90 @@
+2025-03-03 19:22:11,802 - __main__ - INFO - Starting download pipeline...
+2025-03-03 19:22:11,802 - __main__ - INFO - Saved metadata to ../../data/metadata.json
+2025-03-03 19:22:11,802 - __main__ - INFO - Download pipeline completed successfully
+2025-03-03 19:22:11,802 - __main__ - INFO - Pipeline execution completed
+2025-03-03 19:32:23,906 - __main__ - INFO - Starting download pipeline...
+2025-03-03 19:32:23,906 - __main__ - INFO - Collecting papers from arXiv with query: Large Language Models
+2025-03-03 19:32:23,911 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Large+Language+Models&id_list=&sortBy=submittedDate&sortOrder=descending&start=0&max_results=100
+2025-03-03 19:32:25,250 - arxiv - INFO - Got first page: 10 of 1230433 total results
+2025-03-03 19:32:25,910 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21321v1.pdf
+2025-03-03 19:32:28,454 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21319v1.pdf
+2025-03-03 19:32:32,093 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21318v1.pdf
+2025-03-03 19:32:34,980 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21317v1.pdf
+2025-03-03 19:32:38,009 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21316v1.pdf
+2025-03-03 19:32:39,650 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21315v1.pdf
+2025-03-03 19:32:43,257 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21314v1.pdf
+2025-03-03 19:32:46,002 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21313v1.pdf
+2025-03-03 19:32:48,709 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21311v1.pdf
+2025-03-03 19:32:52,086 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21309v1.pdf
+2025-03-03 19:32:54,951 - arxiv - INFO - Requesting page (first: False, try: 0): https://export.arxiv.org/api/query?search_query=Large+Language+Models&id_list=&sortBy=submittedDate&sortOrder=descending&start=10&max_results=100
+2025-03-03 19:32:58,041 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21306v1.pdf
+2025-03-03 19:33:00,067 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21303v1.pdf
+2025-03-03 19:33:03,172 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21300v1.pdf
+2025-03-03 19:33:06,196 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21297v1.pdf
+2025-03-03 19:33:07,801 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21296v1.pdf
+2025-03-03 19:33:10,870 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21293v1.pdf
+2025-03-03 19:33:15,364 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21292v1.pdf
+2025-03-03 19:33:19,748 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21291v1.pdf
+2025-03-03 19:33:21,767 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21290v1.pdf
+2025-03-03 19:33:25,430 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21289v1.pdf
+2025-03-03 19:33:29,072 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21286v1.pdf
+2025-03-03 19:33:32,011 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21284v1.pdf
+2025-03-03 19:33:34,519 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21283v1.pdf
+2025-03-03 19:33:36,560 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21282v1.pdf
+2025-03-03 19:33:40,546 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21280v1.pdf
+2025-03-03 19:33:42,499 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21278v1.pdf
+2025-03-03 19:33:45,295 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21277v1.pdf
+2025-03-03 19:33:48,357 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21275v1.pdf
+2025-03-03 19:33:50,714 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21274v1.pdf
+2025-03-03 19:33:52,839 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21271v1.pdf
+2025-03-03 19:33:55,825 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21269v1.pdf
+2025-03-03 19:33:59,484 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21268v1.pdf
+2025-03-03 19:34:01,661 - __main__ - INFO - Downloaded: ../../data/pdfs/arxiv_2502.21267v1.pdf
+2025-03-03 19:34:03,684 - __main__ - INFO - Collected 33 papers from arXiv query: Large Language Models
+2025-03-03 19:34:03,684 - __main__ - INFO - Collecting papers from OpenReview with venue: ICLR 2023
+2025-03-03 19:34:05,100 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_4ZjBAlcuBO.pdf
+2025-03-03 19:34:08,210 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_S7jP4F54hEi.pdf
+2025-03-03 19:34:10,999 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_A19iY4k5mY.pdf
+2025-03-03 19:34:13,586 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_RiEnmzmK9_g.pdf
+2025-03-03 19:34:16,278 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_muaSfzX9odO.pdf
+2025-03-03 19:34:19,292 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_j4ViefKpyA.pdf
+2025-03-03 19:34:21,678 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_5libS0tuRA.pdf
+2025-03-03 19:34:24,841 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_uECAYvIQOh.pdf
+2025-03-03 19:34:26,668 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_xLK_-SLxMgw.pdf
+2025-03-03 19:34:30,232 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_8VC_NHYzuM.pdf
+2025-03-03 19:34:32,874 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_pFCumdWKhZI.pdf
+2025-03-03 19:34:35,499 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_KKTUgEVRTvU.pdf
+2025-03-03 19:34:38,021 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_-FoOEXAUHD.pdf
+2025-03-03 19:34:40,286 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_7MZVpPRAbh.pdf
+2025-03-03 19:34:43,181 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview__eq5KuLCyt.pdf
+2025-03-03 19:34:45,816 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_IPTvF82IUSd.pdf
+2025-03-03 19:34:48,538 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_22KRCpsub7D.pdf
+2025-03-03 19:34:51,824 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_sHN9cYMR3kp.pdf
+2025-03-03 19:34:54,474 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_JVZiQVfejo.pdf
+2025-03-03 19:34:56,645 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_zwd0ompoeRo.pdf
+2025-03-03 19:34:59,064 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_qjOCAGVBSs.pdf
+2025-03-03 19:35:01,692 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_gC6RE4Lgv0.pdf
+2025-03-03 19:35:04,796 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_q_lYGahGQ6W.pdf
+2025-03-03 19:35:07,556 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_BTIe7NBOku.pdf
+2025-03-03 19:35:11,171 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_rjK2p2DAMy.pdf
+2025-03-03 19:35:13,361 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_33R9Da7B9k.pdf
+2025-03-03 19:35:15,298 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_0lAzNK-7Eeo.pdf
+2025-03-03 19:35:17,082 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_RTUgpjALw8F.pdf
+2025-03-03 19:35:19,153 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_6TIhIWb6j8.pdf
+2025-03-03 19:35:22,409 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_C2MBMaaNWQ.pdf
+2025-03-03 19:35:25,322 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_UKVT8y88g3r.pdf
+2025-03-03 19:35:28,555 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_Rhs560dA1R0.pdf
+2025-03-03 19:35:32,163 - __main__ - INFO - Downloaded: ../../data/pdfs/openreview_TcOCW5yCVR.pdf
+2025-03-03 19:35:33,417 - __main__ - INFO - Collected 33 papers from OpenReview venue: ICLR 2023
+2025-03-03 19:35:33,417 - __main__ - INFO - Collecting papers from PapersWithCode with topic: Language Modeling
+2025-03-03 19:35:35,622 - __main__ - ERROR - Failed to collect from PapersWithCode: 'str' object has no attribute 'get'
+2025-03-03 19:35:35,623 - __main__ - INFO - Collected 0 papers from PapersWithCode topic: Language Modeling
+2025-03-03 19:35:35,623 - __main__ - INFO - Collecting papers from PapersWithCode with topic: Transformers
+2025-03-03 19:35:37,801 - __main__ - ERROR - Failed to collect from PapersWithCode: 'str' object has no attribute 'get'
+2025-03-03 19:35:37,801 - __main__ - INFO - Collected 0 papers from PapersWithCode topic: Transformers
+2025-03-03 19:35:37,802 - __main__ - INFO - Collecting papers from PapersWithCode with topic: Fine-tuning
+2025-03-03 19:35:39,947 - __main__ - ERROR - Failed to collect from PapersWithCode: 'str' object has no attribute 'get'
+2025-03-03 19:35:39,947 - __main__ - INFO - Collected 0 papers from PapersWithCode topic: Fine-tuning
+2025-03-03 19:35:39,949 - __main__ - INFO - Saved metadata to ../../data/metadata.json
+2025-03-03 19:35:39,949 - __main__ - INFO - Download pipeline completed successfully
+2025-03-03 19:35:39,949 - __main__ - INFO - Pipeline execution completed
