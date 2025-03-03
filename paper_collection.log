@@ -88,3 +88,12 @@
 2025-03-03 19:35:39,949 - __main__ - INFO - Saved metadata to ../../data/metadata.json
 2025-03-03 19:35:39,949 - __main__ - INFO - Download pipeline completed successfully
 2025-03-03 19:35:39,949 - __main__ - INFO - Pipeline execution completed
+2025-03-03 21:35:02,683 - __main__ - INFO - Starting download pipeline...
+2025-03-03 21:35:02,684 - __main__ - INFO - Collecting papers from arXiv with query: Large Language Models
+2025-03-03 21:35:02,689 - arxiv - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Large+Language+Models&id_list=&sortBy=submittedDate&sortOrder=descending&start=0&max_results=100
+2025-03-03 21:35:04,183 - arxiv - INFO - Got first page: 1 of 1230433 total results
+2025-03-03 21:35:04,840 - __main__ - INFO - Downloaded: ml_papers/pdfs/arxiv_2502.21321v1.pdf
+2025-03-03 21:35:06,373 - arxiv - INFO - Sleeping: 0.801097 seconds
+2025-03-03 21:35:07,175 - arxiv - INFO - Requesting page (first: False, try: 0): https://export.arxiv.org/api/query?search_query=Large+Language+Models&id_list=&sortBy=submittedDate&sortOrder=descending&start=1&max_results=100
+2025-03-03 21:35:09,476 - __main__ - INFO - Downloaded: ml_papers/pdfs/arxiv_2502.21319v1.pdf
+2025-03-03 21:35:11,243 - __main__ - INFO - Pipeline execution completed
