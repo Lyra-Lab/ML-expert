@@ -1,14 +1,51 @@
-# Requirements file (requirements.txt):
-torch>=2.0.0
-pytorch-lightning>=2.0.0
-transformers>=4.30.0
-peft>=0.4.0
-datasets>=2.12.0
-pandas>=1.5.0
-numpy>=1.24.0
-PyMuPDF>=1.22.0
-beautifulsoup4>=4.12.0
-arxiv>=1.4.0
-tqdm>=4.65.0
-requests>=2.31.0
-tensorboard>=2.13.0
+# Core dependencies
+torch>=2.5.1
+transformers>=4.46.2
+pytorch-lightning
+tensorboard
+datasets
+peft
+accelerate
+
+# PDF and Document Processing
+pypdf>=5.2.0
+pypdfium2
+Pillow
+ftfy
+bleach
+markdown2
+
+# API and Data Collection
+arxiv
+requests
+tqdm
+
+# Data Handling and Storage
+smart_open
+cached-path
+orjson
+filelock
+zstandard
+boto3
+httpx
+
+# Language Detection
+lingua-language-detector
+
+# olmocr and its dependencies
+git+https://github.com/allenai/olmocr.git
+cryptography
+beaker-py
+
+# Optional but recommended
+wandb  # for experiment tracking
+einops  # for tensor operations
+s3fs   # for S3 storage support
+omegaconf  # for configuration management
+
+# Development tools
+ruff
+mypy
+black
+isort
+pytest
