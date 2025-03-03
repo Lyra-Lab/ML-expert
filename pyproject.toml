@@ -1,81 +1,47 @@
-[build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
-
 [project]
 name = "ml-expert"
 version = "0.1.0"
-description = "ML Expert tooling for paper collection and analysis"
+description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-  # Original ML-expert dependencies
-  "arxiv>=1.4.0",
-  "beautifulsoup4>=4.12.0",
-  "datasets>=2.12.0",
-  "numpy>=1.24.0",
-  "pandas>=1.5.0",
-  "peft>=0.4.0",
-  "requests>=2.31.0",
-  "tensorboard>=2.13.0",
-  "tqdm>=4.65.0",
-
-  # Essential olmocr dependencies
-  "torch>=2.5.1",
-  "transformers>=4.46.2",
-  "Pillow",
-  "pypdf>=5.2.0",
-  "pypdfium2",
-  "lingua-language-detector",
-  "ftfy",
-  "bleach",
-  "markdown2",
-  "filelock",
-  "orjson",
-  "zstandard",
-  "boto3",
-  "httpx",
-  "cached-path",
-  "smart_open",
+    "accelerate>=1.4.0",
+    "arxiv>=2.1.3",
+    "beaker-py>=1.34.1",
+    "black>=25.1.0",
+    "bleach>=6.2.0",
+    "boto3>=1.37.4",
+    "cached-path>=1.6.7",
+    "cryptography>=44.0.2",
+    "datasets>=3.3.2",
+    "einops>=0.8.1",
+    "filelock>=3.17.0",
+    "ftfy>=6.3.1",
+    "httpx>=0.28.1",
+    "isort>=6.0.1",
+    "lingua-language-detector>=2.0.2",
+    "markdown2>=2.5.3",
+    "mypy>=1.15.0",
+    "olmocr",
+    "omegaconf>=2.3.0",
+    "orjson>=3.10.15",
+    "peft>=0.14.0",
+    "pillow>=11.1.0",
+    "pypdf>=5.2.0",
+    "pypdfium2>=4.30.1",
+    "pytest>=8.3.5",
+    "pytorch-lightning>=2.5.0.post0",
+    "requests>=2.32.3",
+    "ruff>=0.9.9",
+    "s3fs>=0.4.2",
+    "smart-open>=7.1.0",
+    "tensorboard>=2.19.0",
+    "torch>=2.5.1",
+    "tqdm>=4.67.1",
+    "transformers>=4.46.2",
+    "wandb>=0.19.7",
+    "zstandard>=0.23.0",
 ]
 
-[project.optional-dependencies]
-dev = [
-  "ruff",
-  "mypy",
-  "black",
-  "isort",
-  "pytest",
-  "pytest-cov",
-  "build",
-  "setuptools",
-  "wheel",
-]
-
-train = [
-  "torch",
-  "torchvision",
-  "accelerate",
-  "datasets",
-  "peft",
-  "wandb",
-  "omegaconf",
-  "s3fs",
-  "necessary",
-  "einops",
-]
-
-[tool.black]
-exclude = '''
-(
-__pycache__
-    | \.git
-    | \.mypy_cache
-    | \.pytest_cache
-    | \.vscode
-    | \.venv
-    | \bdist\b
-    | \bdoc\b
-)
-line-length = 160
-include = '\.pyi?$'
+[tool.uv.sources]
+olmocr = { git = "https://github.com/allenai/olmocr.git" }
