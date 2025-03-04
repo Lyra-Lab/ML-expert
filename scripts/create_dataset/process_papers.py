@@ -3,6 +3,9 @@ import json
 import logging
 from pathlib import Path
 import asyncio
+import subprocess
+import time
+import os
 from tqdm import tqdm
 import random
 from olmocr.pipeline import process_pdf
@@ -66,17 +69,86 @@ class PaperProcessor:
             apply_download_spam_check=True  # Filter out spam PDFs
         )
 
+        # Initialize variables for sglang server
+        self.sglang_process = None
+        self.sglang_port = 30000  # Default port
+
+    async def start_sglang_server(self):
+        """Start the sglang server if not already running"""
+        logger.info("Starting sglang server...")
+
+        # Check if server is already running
+        try:
+            import socket
+            s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            s.settimeout(1)
+            result = s.connect_ex(('localhost', self.sglang_port))
+            s.close()
+
+            if result == 0:
+                logger.info("sglang server is already running")
+                return True
+        except Exception as e:
+            logger.warning(f"Error checking server status: {e}")
+
+        # Try to start the server
+        try:
+            # Set environment variables
+            os.environ["SGLANG_DISABLE_MODEL_UPLOAD"] = "1"
+
+            # Start the server process
+            self.sglang_process = subprocess.Popen(
+                ["python", "-m", "sglang.launch_server", "--port", str(self.sglang_port)],
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE
+            )
+
+            logger.info(f"sglang server process started with PID {self.sglang_process.pid}")
+
+            # Give it time to start
+            await asyncio.sleep(10)
+
+            # Check if it's running
+            for i in range(5):
+                try:
+                    from olmocr.pipeline import sglang_server_ready
+                    await sglang_server_ready()
+                    logger.info("sglang server is ready")
+                    return True
+                except Exception as e:
+                    logger.warning(f"Server not ready yet (attempt {i+1}/5): {e}")
+                    await asyncio.sleep(5)
+
+            # If we get here, server couldn't be started or verified
+            logger.warning("Could not verify sglang server is running, but will try to continue")
+            return True  # Return True anyway to attempt processing
+
+        except Exception as e:
+            logger.error(f"Failed to start sglang server: {e}")
+            return False
+
     async def initialize_sglang_server(self):
         """Initialize the sglang server for OCR processing"""
+        await self.start_sglang_server()  # Start our own server
+
         from olmocr.pipeline import sglang_server_ready
 
-        # Wait for server to be ready
-        try:
-            await sglang_server_ready()
-            logger.info("sglang server initialized successfully")
-        except Exception as e:
-            logger.error(f"Failed to initialize sglang server: {e}")
-            raise
+        # Try to connect to the server
+        max_attempts = 3
+        for attempt in range(max_attempts):
+            try:
+                await sglang_server_ready()
+                logger.info("sglang server connection established")
+                return
+            except Exception as e:
+                logger.warning(f"Failed to connect to sglang server (attempt {attempt+1}/{max_attempts}): {e}")
+                if attempt < max_attempts - 1:
+                    logger.info("Restarting sglang server...")
+                    await self.start_sglang_server()
+                    await asyncio.sleep(5)
+
+        logger.error("All attempts to connect to sglang server failed")
+        raise RuntimeError("Could not connect to sglang server after multiple attempts")
 
     async def process_single_pdf(self, pdf_path):
         """Helper function to process a single PDF"""
@@ -201,10 +273,25 @@ class PaperProcessor:
 
             return results
 
-        # Run processing
-        results = asyncio.run(process_all_pdfs())
-        logger.info(f"Successfully processed {len(results)} PDFs")
-        return results
+        try:
+            # Run processing
+            results = asyncio.run(process_all_pdfs())
+            logger.info(f"Successfully processed {len(results)} PDFs")
+            return results
+        finally:
+            # Clean up sglang server process if we started it
+            if self.sglang_process is not None:
+                try:
+                    logger.info("Stopping sglang server...")
+                    self.sglang_process.terminate()
+                    self.sglang_process.wait(timeout=10)
+                    logger.info("sglang server stopped")
+                except Exception as e:
+                    logger.warning(f"Error stopping sglang server: {e}")
+                    try:
+                        self.sglang_process.kill()
+                    except:
+                        pass
 
     def create_dataset(self, train_ratio=0.8, val_ratio=0.1, test_ratio=0.1, format_type="causal_lm"):
         """Create dataset splits from processed documents."""
@@ -317,6 +404,7 @@ class PaperProcessor:
             # Try to create HuggingFace datasets object
             try:
                 import datasets
+                from datasets import Dataset, DatasetDict
 
                 # Create dataset dictionary from JSONL files
                 dataset_dict = DatasetDict({
@@ -330,6 +418,7 @@ class PaperProcessor:
                 logger.info(f"HuggingFace dataset saved to {self.hf_dataset_dir}")
 
                 # Create dataset card (README.md)
+                creation_time = time.strftime('%Y-%m-%d %H:%M:%S')
                 dataset_card = f"""
 # ML Research Papers Dataset
 
@@ -338,7 +427,7 @@ class PaperProcessor:
 - **Source**: Scientific papers extracted from research repositories
 - **Format**: {format_type}
 - **Size**: {total} documents ({len(train_formatted)} train, {len(val_formatted)} validation, {len(test_formatted)} test)
-- **Created**: {Path.ctime(Path(self.hf_dataset_dir))}
+- **Created**: {creation_time}
 
 ## Usage
 
