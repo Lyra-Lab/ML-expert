@@ -16,40 +16,30 @@ from peft import (
     get_peft_model,
     prepare_model_for_kbit_training
 )
-from datasets import load_dataset
+from datasets import load_from_disk
 
 # %% Configuration
-MODEL_NAME = "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"  # Model to fine-tune
-# Directory to save the fine-tuned model
+MODEL_NAME = "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
 OUTPUT_DIR = "deepseek-finetuned"
-LORA_R = 8                                           # LoRA attention dimension
-LORA_ALPHA = 16                                      # LoRA alpha parameter
-# Dropout probability for LoRA layers
+LORA_R = 8
+LORA_ALPHA = 16
 LORA_DROPOUT = 0.05
-BATCH_SIZE = 4                                       # Batch size for training
-# Micro batch size for gradient accumulation
+BATCH_SIZE = 4
 MICRO_BATCH_SIZE = 2
 GRADIENT_ACCUMULATION_STEPS = BATCH_SIZE // MICRO_BATCH_SIZE
-MAX_SEQ_LENGTH = 512                                 # Maximum sequence length
-LEARNING_RATE = 3e-4                                 # Learning rate
-NUM_EPOCHS = 3                                       # Number of training epochs
-# Number of warmup steps for learning rate scheduler
+MAX_SEQ_LENGTH = 512
+LEARNING_RATE = 3e-4
+NUM_EPOCHS = 3
 WARMUP_STEPS = 100
 
-# %% Custom Dataset for your text corpus
+# Data paths
+DATA_DIR = 'data'  # Base directory where your processed data is stored
+HF_DATASET_DIR = f"{DATA_DIR}/hf_dataset"  # Directory with HuggingFace dataset
 
-
-class TextCorpusDataset(Dataset):
-    def __init__(self, data_path, tokenizer, max_length=MAX_SEQ_LENGTH):
-        # If your data is in a text file (one sample per line)
-        # self.dataset = load_dataset('text', data_files=data_path)['train']
-
-        # If your data is in JSON format
-        self.dataset = load_dataset('json', data_files=data_path)['train']
-
-        # If your data is in a custom format, modify this section accordingly
-        # Example: self.dataset = your_custom_loading_function(data_path)
-
+# %% Custom Dataset class for HuggingFace datasets
+class HFDataset(Dataset):
+    def __init__(self, dataset, tokenizer, split="train", max_length=MAX_SEQ_LENGTH):
+        self.dataset = dataset[split]
         self.tokenizer = tokenizer
         self.max_length = max_length
 
@@ -57,8 +47,7 @@ class TextCorpusDataset(Dataset):
         return len(self.dataset)
 
     def __getitem__(self, idx):
-        # Assuming each entry in your dataset has a 'text' field
-        # Modify this according to your actual data structure
+        # Get text from the dataset
         text = self.dataset[idx]['text']
 
         # Tokenize the text
@@ -73,13 +62,10 @@ class TextCorpusDataset(Dataset):
         return {
             'input_ids': tokenized.input_ids[0],
             'attention_mask': tokenized.attention_mask[0],
-            # For causal language modeling
             'labels': tokenized.input_ids[0].clone()
         }
 
 # %% PyTorch Lightning module for fine-tuning
-
-
 class DeepSeekFineTuner(pl.LightningModule):
     def __init__(self, model_name, lora_config, learning_rate, warmup_steps, total_steps):
         super().__init__()
@@ -88,7 +74,7 @@ class DeepSeekFineTuner(pl.LightningModule):
         # Load tokenizer
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
 
-        # Load model with 4-bit quantization for memory efficiency
+        # Load model with 4-bit quantization
         self.model = AutoModelForCausalLM.from_pretrained(
             model_name,
             torch_dtype=torch.bfloat16,
@@ -157,7 +143,6 @@ class DeepSeekFineTuner(pl.LightningModule):
             }
         }
 
-
 # %% Main function
 def main():
     # Set up LoRA configuration
@@ -167,7 +152,6 @@ def main():
         lora_dropout=LORA_DROPOUT,
         bias="none",
         task_type="CAUSAL_LM",
-        # Common attention modules for DeepSeek
         target_modules=["q_proj", "k_proj", "v_proj", "o_proj"]
     )
 
@@ -177,15 +161,23 @@ def main():
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
 
-    # Create datasets
-    # Replace 'path/to/your/text_corpus.json' with the actual path to your data
-    train_dataset = TextCorpusDataset(
-        'ml_corpus/corpus/train_corpus.json', tokenizer)
-    print("Number of training samples:", len(train_dataset))
+    # Load the HuggingFace dataset
+    try:
+        print(f"Loading HuggingFace dataset from {HF_DATASET_DIR}")
+        hf_dataset = load_from_disk(HF_DATASET_DIR)
+        print(f"Dataset loaded with splits: {hf_dataset.keys()}")
 
-    val_dataset = TextCorpusDataset(
-        'ml_corpus/corpus/val_corpus.json', tokenizer)
-    print("Number of validation samples:", len(val_dataset))
+        # Create datasets
+        train_dataset = HFDataset(hf_dataset, tokenizer, split="train")
+        print("Number of training samples:", len(train_dataset))
+
+        val_dataset = HFDataset(hf_dataset, tokenizer, split="validation")
+        print("Number of validation samples:", len(val_dataset))
+
+    except Exception as e:
+        print(f"Error loading dataset: {e}")
+        print("Please make sure the HuggingFace dataset is properly created.")
+        return
 
     # Create data loaders
     data_collator = DataCollatorForLanguageModeling(
@@ -238,7 +230,7 @@ def main():
         max_epochs=NUM_EPOCHS,
         accelerator='gpu',
         devices=1,
-        precision='bf16-mixed',  # Use bf16 mixed precision for faster training
+        precision='bf16-mixed',
         gradient_clip_val=1.0,
         accumulate_grad_batches=GRADIENT_ACCUMULATION_STEPS,
         callbacks=[checkpoint_callback, lr_monitor],
@@ -254,7 +246,6 @@ def main():
     tokenizer.save_pretrained(os.path.join(OUTPUT_DIR, 'final_model'))
 
     print(f"Model saved to {os.path.join(OUTPUT_DIR, 'final_model')}")
-
 
 if __name__ == "__main__":
     main()

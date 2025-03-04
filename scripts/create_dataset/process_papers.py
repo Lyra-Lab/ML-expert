@@ -53,14 +53,14 @@ class PaperProcessor:
         else:
             logger.warning(f"No metadata file found at {metadata_path}. Processing will continue without metadata.")
 
-    def process_pdfs_simple(self):
-        """Process PDFs using PyPDF2 instead of olmocr."""
-        logger.info("Processing PDFs with PyPDF2 (simple approach)...")
+    def process_pdfs_with_pymupdf(self):
+        """Process PDFs using PyMuPDF (fitz) for better text extraction."""
+        logger.info("Processing PDFs with PyMuPDF (fitz)...")
 
         try:
-            from PyPDF2 import PdfReader
+            import fitz  # PyMuPDF
         except ImportError:
-            logger.error("PyPDF2 is not installed. Install with 'pip install PyPDF2'")
+            logger.error("PyMuPDF is not installed. Install with 'pip install pymupdf'")
             return []
 
         # Get list of PDFs to process
@@ -84,21 +84,25 @@ class PaperProcessor:
                     logger.debug(f"Skipping already processed PDF: {pdf_path}")
                     continue
 
-                # Extract text with PyPDF2
-                reader = PdfReader(str(pdf_path))
-                text = ""
-                total_pages = len(reader.pages)
+                # Open the PDF with PyMuPDF
+                doc = fitz.open(str(pdf_path))
+                total_pages = len(doc)
 
                 if total_pages == 0:
                     logger.warning(f"Skipping empty PDF: {pdf_path}")
                     continue
 
-                # Extract text from each page
+                # Extract text from each page with improved handling
+                text = ""
                 for page_num in range(total_pages):
-                    page = reader.pages[page_num]
-                    page_text = page.extract_text()
+                    page = doc[page_num]
+                    # Get text with improved layout preservation
+                    page_text = page.get_text("text")
                     if page_text:
                         text += page_text + "\n\n"
+
+                # Close the document
+                doc.close()
 
                 if not text.strip():
                     logger.warning(f"No text content extracted from {pdf_path}")
@@ -109,7 +113,7 @@ class PaperProcessor:
                 if self.papers_metadata:
                     pdf_id_str = str(pdf_id)
                     metadata = next(
-                        (item for item in self.papers_metadata 
+                        (item for item in self.papers_metadata
                          if pdf_id_str.endswith(str(item.get('id', '')))),
                         {}
                     )
@@ -215,15 +219,15 @@ class PaperProcessor:
             elif format_type == "summarization":
                 # For summarization, use abstract as target and full text as input
                 train_formatted = [
-                    {"document": item["text"], "summary": item["metadata"]["abstract"]} 
+                    {"document": item["text"], "summary": item["metadata"]["abstract"]}
                     for item in train_data if item["metadata"].get("abstract")
                 ]
                 val_formatted = [
-                    {"document": item["text"], "summary": item["metadata"]["abstract"]} 
+                    {"document": item["text"], "summary": item["metadata"]["abstract"]}
                     for item in val_data if item["metadata"].get("abstract")
                 ]
                 test_formatted = [
-                    {"document": item["text"], "summary": item["metadata"]["abstract"]} 
+                    {"document": item["text"], "summary": item["metadata"]["abstract"]}
                     for item in test_data if item["metadata"].get("abstract")
                 ]
             else:
@@ -354,8 +358,8 @@ test_data = dataset["test"]
         """
         logger.info(f"Starting processing pipeline in {self.base_dir}...")
 
-        # Process PDFs with PyPDF2 (simple approach)
-        self.process_pdfs_simple()
+        # Process PDFs with PyMuPDF
+        self.process_pdfs_with_pymupdf()
 
         # Create dataset
         self.create_dataset(train_ratio, val_ratio, test_ratio, format_type)
@@ -436,17 +440,17 @@ def main():
         logging.getLogger().setLevel(logging.DEBUG)
 
     try:
-        # Check for PyPDF2
+        # Check for PyMuPDF
         try:
-            from PyPDF2 import PdfReader
-            logger.info("PyPDF2 is available")
+            import fitz  # PyMuPDF
+            logger.info("PyMuPDF (fitz) is available")
         except ImportError:
-            logger.error("PyPDF2 is required but not installed. Install with: pip install PyPDF2")
+            logger.error("PyMuPDF is required but not installed. Install with: pip install pymupdf")
             return
 
         processor = PaperProcessor(args.base_dir)
         if not args.skip_processing:
-            processor.process_pdfs_simple()
+            processor.process_pdfs_with_pymupdf()
         processor.create_dataset(args.train_ratio, args.val_ratio, args.test_ratio, args.format_type)
 
         # Push to HuggingFace Hub if requested

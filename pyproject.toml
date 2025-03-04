@@ -2,37 +2,43 @@
 name = "ml-expert"
 version = "0.1.0"
 description = "ML research paper processing and dataset creation"
-requires-python = ">=3.11"
+requires-python = ">=3.9"
 dependencies = [
-    "torch>=2.5.1",
-    "transformers>=4.46.2",
-    "sglang>=0.1.11",
-    "accelerate>=0.27.1",
-    "pypdf>=5.2.0",
-    "pypdfium2",
-    "pdf2image",
-    "poppler-utils",
-    "lingua-language-detector",
-    "ftfy",
-    "bleach",
-    "markdown2",
-    "Pillow",
-    "smart_open",
-    "zstandard",
-    "orjson",
-    "cached-path",
-    "boto3",
-    "httpx",
-    "requests",
-    "cryptography",
-    "tqdm",
-    "filelock",
-    "asyncio",
-    "olmocr @ git+https://github.com/allenai/olmocr.git",
-    "pytorch-lightning",
-    "datasets",
-    "peft",
+    # Essential packages for downloading papers from arXiv
+    "arxiv>=1.4.7",
+    "requests>=2.31.0",
+    "tqdm>=4.66.0",
+
+    # PDF processing with PyMuPDF
+    "pymupdf>=1.23.0", # This is the package for fitz
+
+    # Dataset creation and Hugging Face integration
+    "datasets>=2.16.0",
+    "huggingface-hub>=0.20.0", # For pushing to Hugging Face Hub
+
+    # Training dependencies
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "transformers>=4.35.0",
+    "peft>=0.5.0",              # For LoRA fine-tuning
+    "pytorch-lightning>=2.0.0",
+
+    # Utilities
+    "filelock>=3.12.0",
+    "numpy>=1.24.0",
 ]
+
+[project.optional-dependencies]
+# Optional: Full training setup with additional dependencies
+train = [
+    "accelerate>=0.25.0",
+    "bitsandbytes>=0.41.0",  # For 4-bit quantization
+    "sentencepiece>=0.1.99", # Required for some tokenizers
+    "tensorboard>=2.15.0",   # For logging during training
+]
+
+# Optional: Development tools
+dev = ["black>=23.10.0", "isort>=5.12.0", "ruff>=0.1.0"]
 
 [tool.black]
 line-length = 160
@@ -44,4 +50,4 @@ multi_line_output = 3
 
 [tool.ruff]
 line-length = 160
-target-version = "py311"
+target-version = "py39"

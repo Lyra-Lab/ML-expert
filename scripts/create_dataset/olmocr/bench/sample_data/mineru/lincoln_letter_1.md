@@ -1,1 +1,0 @@
-![](tmpgz41xbv8/92aad94c4fc9c5b80db131bf1f9dfacb1f43a27b1620e89dd78f5b225dcfd6f9.jpg)  

@@ -1,0 +1,38 @@
+{
+  "builder_name": "json",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "json",
+  "dataset_size": 1599578,
+  "description": "",
+  "download_checksums": {
+    "/ML-expert/dataset/hf_dataset/validation.jsonl": {
+      "num_bytes": 1643144,
+      "checksum": null
+    }
+  },
+  "download_size": 1643144,
+  "features": {
+    "text": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 3242722,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 1599578,
+      "num_examples": 30,
+      "dataset_name": "json"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

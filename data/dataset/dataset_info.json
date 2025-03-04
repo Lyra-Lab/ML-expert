@@ -1,0 +1,15 @@
+{
+  "dataset_path": "dataset/dataset",
+  "hf_dataset_path": "dataset/hf_dataset",
+  "train_file": "dataset/dataset/train/train_corpus.json",
+  "val_file": "dataset/dataset/val/val_corpus.json",
+  "test_file": "dataset/dataset/test/test_corpus.json",
+  "train_samples": 240,
+  "val_samples": 30,
+  "test_samples": 31,
+  "total_samples": 301,
+  "format_type": "causal_lm",
+  "hf_train_jsonl": "dataset/hf_dataset/train.jsonl",
+  "hf_val_jsonl": "dataset/hf_dataset/validation.jsonl",
+  "hf_test_jsonl": "dataset/hf_dataset/test.jsonl"
+}
